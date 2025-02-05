@@ -33,7 +33,7 @@ ELMFIRE_HOSTS=`printf "$(hostname),%.0s" {1..64}`
 # dir /home/katrinasharonin/Downloads/elmfire/build/source
 gdb --args elmfire_debug_$ELMFIRE_VER elmfire.data 
 
-$ELMFIRE elmfire.data # >& elmfire.out
+#$ELMFIRE elmfire.data # >& elmfire.out
 #mpirun --mca btl tcp,self --oversubscribe -np 6 $ELMFIRE elmfire.data >& elmfire.out
 
 
