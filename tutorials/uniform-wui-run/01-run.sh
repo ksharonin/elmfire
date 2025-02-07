@@ -21,8 +21,6 @@ ELMFIRE_INSTALL_DIR=${ELMFIRE_INSTALL_DIR:-$ELMFIRE_BASE_DIR/build/linux/bin}
 ELMFIRE=$ELMFIRE_INSTALL_DIR/elmfire_$ELMFIRE_VER
 ELMFIRE_DEBUG=$ELMFIRE_INSTALL_DIR/elmfire_debug_$ELMFIRE_VER
 
-progress_message "Launching ELMFIRE"
-
 SOCKETS=`lscpu | grep 'Socket(s)' | cut -d: -f2 | xargs`
 CORES_PER_SOCKET=`lscpu | grep 'Core(s) per socket' | cut -d: -f2 | xargs`
 let "NP = SOCKETS * CORES_PER_SOCKET"
@@ -30,32 +28,18 @@ let "NP = SOCKETS * CORES_PER_SOCKET"
 ELMFIRE_NUM_MPI_PROCESSES=`cat /proc/cpuinfo | grep "cpu cores" | cut -d: -f2 | tail -n 1 | xargs`
 ELMFIRE_HOSTS=`printf "$(hostname),%.0s" {1..64}`
 
-# GDB DEBUGGING
+#-host $ELMFIRE_HOSTS
 # dir /home/katrinasharonin/Downloads/elmfire/build/source
-# gdb --args $ELMFIRE_DEBUG elmfire.data 
+#gdb --args $ELMFIRE_DEBUG elmfire.data 
 
-# REGULAR
 # $ELMFIRE elmfire.data
 
-# GNU PROFILING
 $ELMFIRE_DEBUG elmfire.data 
-gprof $ELMFIRE_DEBUG gmon.out > /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/analysis.txt
-
-# PERF PROFILE
-# perf record -o /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf.data -g $ELMFIRE_DEBUG elmfire.data 
-# perf report -n -i /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf.data > /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf_analysis.txt
-
-# mpi runs
-#-host $ELMFIRE_HOSTS
-# mpirun --mca btl tcp,self --oversubscribe -np 6 $ELMFIRE elmfire.data >& elmfire.out
+gprof $ELMFIRE_DEBUG gmon.out > /home/katrinasharonin/Downloads/elmfire/tutorials/uniform-wui-run/analysis.txt
 
 
 ENDSEC=`date +%s`
 let "RUNTIME = ENDSEC - STARTSEC"
-progress_message "ELMFIRE run is complete"
 echo "Simulation wall clock time:  $RUNTIME s"
-
-
-
 
 exit 0

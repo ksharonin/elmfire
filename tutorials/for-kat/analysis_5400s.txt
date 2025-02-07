@@ -1,0 +1,543 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ks/call  Ks/call  name    
+ 96.43   1648.81  1648.81  4516527     0.00     0.00  __elmfire_spread_rate_MOD_umd_ucb_bldg_spread
+  0.79   1662.39    13.58 142283789     0.00     0.00  __elmfire_spread_rate_MOD_ellipse_ucb
+  0.64   1673.32    10.93     5964     0.00     0.00  __elmfire_level_set_MOD_limit_gradients
+  0.63   1684.11    10.79     5966     0.00     0.00  __elmfire_level_set_MOD_ux_and_uy_elliptical
+  0.30   1689.20     5.09     2977     0.00     0.00  __elmfire_level_set_MOD_calc_cfl
+  0.26   1693.70     4.50        1     0.00     1.71  __elmfire_level_set_MOD_level_set_propagation
+  0.25   1698.02     4.32     5966     0.00     0.00  __elmfire_level_set_MOD_calc_normal_vectors
+  0.23   1701.94     3.92     5964     0.00     0.00  __elmfire_level_set_MOD_rk2_integrate
+  0.15   1704.59     2.65 187377999     0.00     0.00  __elmfire_spread_rate_MOD_hrr_transient
+  0.11   1706.46     1.87      585     0.00     0.00  __elmfire_level_set_MOD_untag_cells
+  0.06   1707.53     1.07 584053163     0.00     0.00  __elmfire_level_set_MOD_half_superbee
+  0.03   1708.05     0.52    76781     0.00     0.00  __elmfire_spread_rate_MOD_crown_spread_rate
+  0.03   1708.56     0.51   129035     0.00     0.00  __elmfire_subs_MOD_append
+  0.02   1708.84     0.28    53603     0.00     0.00  __elmfire_level_set_MOD_tag_band
+  0.01   1709.05     0.21   536914     0.00     0.00  __elmfire_subs_MOD_interp_raster_linkedlist_single
+  0.01   1709.22     0.17    76781     0.00     0.00  __elmfire_spread_rate_MOD_surface_spread_rate
+  0.01   1709.39     0.17      154     0.00     0.00  __elmfire_subs_MOD_interp_raster_linkedlist
+  0.01   1709.52     0.13      768     0.00     0.00  __elmfire_spotting_MOD_ember_trajectory
+  0.00   1709.59     0.07        1     0.00     0.00  __elmfire_init_MOD_read_fuel_model_table
+  0.00   1709.65     0.06      768     0.00     0.00  __elmfire_spotting_MOD_spotting
+  0.00   1709.70     0.05       71     0.00     0.00  __elmfire_subs_MOD_interp_wd_raster
+  0.00   1709.74     0.04    71594     0.00     0.00  __elmfire_subs_MOD_accumulate_cpu_usage
+  0.00   1709.77     0.03       20     0.00     0.00  __elmfire_io_MOD_read_bsq_raster
+  0.00   1709.80     0.03        7     0.00     0.00  __elmfire_io_MOD_main_dump_routine
+  0.00   1709.83     0.03        1     0.00     0.00  __elmfire_io_MOD_read_weather_fuel_topography
+  0.00   1709.85     0.02        9     0.00     0.00  __elmfire_io_MOD_write_bil_raster
+  0.00   1709.87     0.02        1     0.00     0.00  __elmfire_init_MOD_calc_wind_adjustment_factor_everywhere
+  0.00   1709.88     0.01  3572108     0.00     0.00  __elmfire_subs_MOD_wx_icol_from_analysis_ix
+  0.00   1709.89     0.01        1     0.00     0.00  __elmfire_init_MOD_init_rasters
+  0.00   1709.89     0.00  3572108     0.00     0.00  __elmfire_subs_MOD_wx_irow_from_analysis_iy
+  0.00   1709.89     0.00    82877     0.00     0.00  __elmfire_subs_MOD_delete_node
+  0.00   1709.89     0.00    76702     0.00     0.00  __elmfire_subs_MOD_interp_wd_raster_single
+  0.00   1709.89     0.00    17317     0.00     0.00  __elmfire_init_MOD_calc_wind_adjustment_factor_single
+  0.00   1709.89     0.00     7680     0.00     0.00  __elmfire_subs_MOD_erfinv
+  0.00   1709.89     0.00        4     0.00     0.00  __elmfire_subs_MOD_allocate_empty_raster
+  0.00   1709.89     0.00        3     0.00     0.00  __elmfire_subs_MOD_new_dll
+  0.00   1709.89     0.00        2     0.00     0.00  __elmfire_io_MOD_read_bsq_header
+  0.00   1709.89     0.00        2     0.00     0.00  __elmfire_subs_MOD_init
+  0.00   1709.89     0.00        1     0.00     1.71  MAIN__
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_calibration_MOD_read_calibration_by_pyrome
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_ignition_MOD_allocate_ignition_arrays
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_init_MOD_check_inputs
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_init_MOD_init_lookup_tables
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_init_MOD_read_building_fuel_model_table
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_init_MOD_set_misc_parameters
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_init_MOD_setup_shared_memory_1
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_init_MOD_setup_shared_memory_2
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_init_MOD_write_fuel_model_table
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_io_MOD_postprocess
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_io_MOD_setup_parallel_io
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_namelists_MOD_read_calibration
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_namelists_MOD_read_computational_domain
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_namelists_MOD_read_inputs
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_namelists_MOD_read_misc
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_namelists_MOD_read_monte_carlo
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_namelists_MOD_read_outputs
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_namelists_MOD_read_simulator
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_namelists_MOD_read_smoke
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_namelists_MOD_read_spotting
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_namelists_MOD_read_suppression
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_namelists_MOD_read_time_control
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_namelists_MOD_read_wui
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_spotting_MOD_set_spotting_parameters
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_subs_MOD_get_operating_system
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_subs_MOD_hour_of_year_to_timestamp
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_subs_MOD_icol_from_x
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_subs_MOD_irow_from_y
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_subs_MOD_map_fine_to_coarse
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_subs_MOD_perturb_rasters
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_subs_MOD_shutdown
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_subs_MOD_sunrise_sunset_calcs
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_subs_MOD_tidy
+  0.00   1709.89     0.00        1     0.00     0.00  __elmfire_subs_MOD_write_timings_to_disk
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.00% of 1709.89 seconds
+
+index % time    self  children    called     name
+                0.00 1709.89       1/1           main [2]
+[1]    100.0    0.00 1709.89       1         MAIN__ [1]
+                4.50 1705.23       1/1           __elmfire_level_set_MOD_level_set_propagation [3]
+                0.07    0.00       1/1           __elmfire_init_MOD_read_fuel_model_table [22]
+                0.03    0.03       1/1           __elmfire_io_MOD_read_weather_fuel_topography [23]
+                0.01    0.02       1/1           __elmfire_init_MOD_init_rasters [28]
+                0.00    0.00      18/71594       __elmfire_subs_MOD_accumulate_cpu_usage [26]
+                0.00    0.00       2/2           __elmfire_io_MOD_read_bsq_header [58]
+                0.00    0.00       2/4           __elmfire_subs_MOD_allocate_empty_raster [56]
+                0.00    0.00       1/1           __elmfire_subs_MOD_get_operating_system [84]
+                0.00    0.00       1/1           __elmfire_namelists_MOD_read_misc [74]
+                0.00    0.00       1/1           __elmfire_namelists_MOD_read_inputs [73]
+                0.00    0.00       1/1           __elmfire_namelists_MOD_read_outputs [76]
+                0.00    0.00       1/1           __elmfire_namelists_MOD_read_computational_domain [72]
+                0.00    0.00       1/1           __elmfire_namelists_MOD_read_time_control [81]
+                0.00    0.00       1/1           __elmfire_namelists_MOD_read_simulator [77]
+                0.00    0.00       1/1           __elmfire_namelists_MOD_read_wui [82]
+                0.00    0.00       1/1           __elmfire_namelists_MOD_read_calibration [71]
+                0.00    0.00       1/1           __elmfire_namelists_MOD_read_suppression [80]
+                0.00    0.00       1/1           __elmfire_namelists_MOD_read_spotting [79]
+                0.00    0.00       1/1           __elmfire_namelists_MOD_read_smoke [78]
+                0.00    0.00       1/1           __elmfire_namelists_MOD_read_monte_carlo [75]
+                0.00    0.00       1/1           __elmfire_init_MOD_write_fuel_model_table [68]
+                0.00    0.00       1/1           __elmfire_calibration_MOD_read_calibration_by_pyrome [60]
+                0.00    0.00       1/1           __elmfire_init_MOD_read_building_fuel_model_table [64]
+                0.00    0.00       1/1           __elmfire_init_MOD_check_inputs [62]
+                0.00    0.00       1/1           __elmfire_subs_MOD_sunrise_sunset_calcs [91]
+                0.00    0.00       1/1           __elmfire_io_MOD_setup_parallel_io [70]
+                0.00    0.00       1/1           __elmfire_init_MOD_init_lookup_tables [63]
+                0.00    0.00       1/1           __elmfire_init_MOD_setup_shared_memory_1 [66]
+                0.00    0.00       1/1           __elmfire_subs_MOD_map_fine_to_coarse [88]
+                0.00    0.00       1/1           __elmfire_ignition_MOD_allocate_ignition_arrays [61]
+                0.00    0.00       1/1           __elmfire_init_MOD_setup_shared_memory_2 [67]
+                0.00    0.00       1/1           __elmfire_subs_MOD_perturb_rasters [89]
+                0.00    0.00       1/1           __elmfire_spotting_MOD_set_spotting_parameters [83]
+                0.00    0.00       1/1           __elmfire_init_MOD_set_misc_parameters [65]
+                0.00    0.00       1/1           __elmfire_io_MOD_postprocess [69]
+                0.00    0.00       1/1           __elmfire_subs_MOD_shutdown [90]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]    100.0    0.00 1709.89                 main [2]
+                0.00 1709.89       1/1           MAIN__ [1]
+-----------------------------------------------
+                4.50 1705.23       1/1           MAIN__ [1]
+[3]    100.0    4.50 1705.23       1         __elmfire_level_set_MOD_level_set_propagation [3]
+               10.79 1665.04    5966/5966        __elmfire_level_set_MOD_ux_and_uy_elliptical [4]
+               10.93    1.07    5964/5964        __elmfire_level_set_MOD_limit_gradients [7]
+                5.09    0.00    2977/2977        __elmfire_level_set_MOD_calc_cfl [8]
+                4.32    0.00    5966/5966        __elmfire_level_set_MOD_calc_normal_vectors [9]
+                3.92    0.00    5964/5964        __elmfire_level_set_MOD_rk2_integrate [10]
+                1.87    0.00     585/585         __elmfire_level_set_MOD_untag_cells [12]
+                0.28    0.30   53603/53603       __elmfire_level_set_MOD_tag_band [14]
+                0.52    0.00   76781/76781       __elmfire_spread_rate_MOD_crown_spread_rate [15]
+                0.21    0.00  536914/536914      __elmfire_subs_MOD_interp_raster_linkedlist_single [17]
+                0.21    0.00   52333/129035      __elmfire_subs_MOD_append [16]
+                0.06    0.13     768/768         __elmfire_spotting_MOD_spotting [18]
+                0.17    0.01     154/154         __elmfire_subs_MOD_interp_raster_linkedlist [19]
+                0.17    0.00   76781/76781       __elmfire_spread_rate_MOD_surface_spread_rate [20]
+                0.05    0.00      71/71          __elmfire_subs_MOD_interp_wd_raster [24]
+                0.03    0.02       7/7           __elmfire_io_MOD_main_dump_routine [25]
+                0.04    0.00   71576/71594       __elmfire_subs_MOD_accumulate_cpu_usage [26]
+                0.00    0.00   76702/76702       __elmfire_subs_MOD_interp_wd_raster_single [53]
+                0.00    0.00   52332/82877       __elmfire_subs_MOD_delete_node [52]
+                0.00    0.00       3/3           __elmfire_subs_MOD_new_dll [57]
+                0.00    0.00       1/1           __elmfire_subs_MOD_icol_from_x [86]
+                0.00    0.00       1/1           __elmfire_subs_MOD_irow_from_y [87]
+                0.00    0.00       1/1           __elmfire_subs_MOD_tidy [92]
+-----------------------------------------------
+               10.79 1665.04    5966/5966        __elmfire_level_set_MOD_level_set_propagation [3]
+[4]     98.0   10.79 1665.04    5966         __elmfire_level_set_MOD_ux_and_uy_elliptical [4]
+             1648.81    3.02 4516527/4516527     __elmfire_spread_rate_MOD_umd_ucb_bldg_spread [5]
+               13.15    0.00 137767262/142283789     __elmfire_spread_rate_MOD_ellipse_ucb [6]
+                0.06    0.00 4346726/187377999     __elmfire_spread_rate_MOD_hrr_transient [11]
+-----------------------------------------------
+             1648.81    3.02 4516527/4516527     __elmfire_level_set_MOD_ux_and_uy_elliptical [4]
+[5]     96.6 1648.81    3.02 4516527         __elmfire_spread_rate_MOD_umd_ucb_bldg_spread [5]
+                2.59    0.00 183031273/187377999     __elmfire_spread_rate_MOD_hrr_transient [11]
+                0.43    0.00 4516527/142283789     __elmfire_spread_rate_MOD_ellipse_ucb [6]
+-----------------------------------------------
+                0.43    0.00 4516527/142283789     __elmfire_spread_rate_MOD_umd_ucb_bldg_spread [5]
+               13.15    0.00 137767262/142283789     __elmfire_level_set_MOD_ux_and_uy_elliptical [4]
+[6]      0.8   13.58    0.00 142283789         __elmfire_spread_rate_MOD_ellipse_ucb [6]
+-----------------------------------------------
+               10.93    1.07    5964/5964        __elmfire_level_set_MOD_level_set_propagation [3]
+[7]      0.7   10.93    1.07    5964         __elmfire_level_set_MOD_limit_gradients [7]
+                1.07    0.00 584053163/584053163     __elmfire_level_set_MOD_half_superbee [13]
+-----------------------------------------------
+                5.09    0.00    2977/2977        __elmfire_level_set_MOD_level_set_propagation [3]
+[8]      0.3    5.09    0.00    2977         __elmfire_level_set_MOD_calc_cfl [8]
+-----------------------------------------------
+                4.32    0.00    5966/5966        __elmfire_level_set_MOD_level_set_propagation [3]
+[9]      0.3    4.32    0.00    5966         __elmfire_level_set_MOD_calc_normal_vectors [9]
+-----------------------------------------------
+                3.92    0.00    5964/5964        __elmfire_level_set_MOD_level_set_propagation [3]
+[10]     0.2    3.92    0.00    5964         __elmfire_level_set_MOD_rk2_integrate [10]
+-----------------------------------------------
+                0.06    0.00 4346726/187377999     __elmfire_level_set_MOD_ux_and_uy_elliptical [4]
+                2.59    0.00 183031273/187377999     __elmfire_spread_rate_MOD_umd_ucb_bldg_spread [5]
+[11]     0.2    2.65    0.00 187377999         __elmfire_spread_rate_MOD_hrr_transient [11]
+-----------------------------------------------
+                1.87    0.00     585/585         __elmfire_level_set_MOD_level_set_propagation [3]
+[12]     0.1    1.87    0.00     585         __elmfire_level_set_MOD_untag_cells [12]
+                0.00    0.00   30545/82877       __elmfire_subs_MOD_delete_node [52]
+-----------------------------------------------
+                1.07    0.00 584053163/584053163     __elmfire_level_set_MOD_limit_gradients [7]
+[13]     0.1    1.07    0.00 584053163         __elmfire_level_set_MOD_half_superbee [13]
+-----------------------------------------------
+                0.28    0.30   53603/53603       __elmfire_level_set_MOD_level_set_propagation [3]
+[14]     0.0    0.28    0.30   53603         __elmfire_level_set_MOD_tag_band [14]
+                0.30    0.00   76702/129035      __elmfire_subs_MOD_append [16]
+-----------------------------------------------
+                0.52    0.00   76781/76781       __elmfire_level_set_MOD_level_set_propagation [3]
+[15]     0.0    0.52    0.00   76781         __elmfire_spread_rate_MOD_crown_spread_rate [15]
+-----------------------------------------------
+                0.21    0.00   52333/129035      __elmfire_level_set_MOD_level_set_propagation [3]
+                0.30    0.00   76702/129035      __elmfire_level_set_MOD_tag_band [14]
+[16]     0.0    0.51    0.00  129035         __elmfire_subs_MOD_append [16]
+                0.00    0.00       2/2           __elmfire_subs_MOD_init [59]
+-----------------------------------------------
+                0.21    0.00  536914/536914      __elmfire_level_set_MOD_level_set_propagation [3]
+[17]     0.0    0.21    0.00  536914         __elmfire_subs_MOD_interp_raster_linkedlist_single [17]
+-----------------------------------------------
+                0.06    0.13     768/768         __elmfire_level_set_MOD_level_set_propagation [3]
+[18]     0.0    0.06    0.13     768         __elmfire_spotting_MOD_spotting [18]
+                0.13    0.00     768/768         __elmfire_spotting_MOD_ember_trajectory [21]
+-----------------------------------------------
+                0.17    0.01     154/154         __elmfire_level_set_MOD_level_set_propagation [3]
+[19]     0.0    0.17    0.01     154         __elmfire_subs_MOD_interp_raster_linkedlist [19]
+                0.01    0.00 3572108/3572108     __elmfire_subs_MOD_wx_icol_from_analysis_ix [31]
+                0.00    0.00 3572108/3572108     __elmfire_subs_MOD_wx_irow_from_analysis_iy [51]
+-----------------------------------------------
+                0.17    0.00   76781/76781       __elmfire_level_set_MOD_level_set_propagation [3]
+[20]     0.0    0.17    0.00   76781         __elmfire_spread_rate_MOD_surface_spread_rate [20]
+-----------------------------------------------
+                0.13    0.00     768/768         __elmfire_spotting_MOD_spotting [18]
+[21]     0.0    0.13    0.00     768         __elmfire_spotting_MOD_ember_trajectory [21]
+                0.00    0.00    7680/7680        __elmfire_subs_MOD_erfinv [55]
+-----------------------------------------------
+                0.07    0.00       1/1           MAIN__ [1]
+[22]     0.0    0.07    0.00       1         __elmfire_init_MOD_read_fuel_model_table [22]
+                0.00    0.00    5096/17317       __elmfire_init_MOD_calc_wind_adjustment_factor_single [54]
+-----------------------------------------------
+                0.03    0.03       1/1           MAIN__ [1]
+[23]     0.0    0.03    0.03       1         __elmfire_io_MOD_read_weather_fuel_topography [23]
+                0.03    0.00      20/20          __elmfire_io_MOD_read_bsq_raster [27]
+-----------------------------------------------
+                0.05    0.00      71/71          __elmfire_level_set_MOD_level_set_propagation [3]
+[24]     0.0    0.05    0.00      71         __elmfire_subs_MOD_interp_wd_raster [24]
+-----------------------------------------------
+                0.03    0.02       7/7           __elmfire_level_set_MOD_level_set_propagation [3]
+[25]     0.0    0.03    0.02       7         __elmfire_io_MOD_main_dump_routine [25]
+                0.02    0.00       9/9           __elmfire_io_MOD_write_bil_raster [29]
+                0.00    0.00       2/4           __elmfire_subs_MOD_allocate_empty_raster [56]
+-----------------------------------------------
+                0.00    0.00      18/71594       MAIN__ [1]
+                0.04    0.00   71576/71594       __elmfire_level_set_MOD_level_set_propagation [3]
+[26]     0.0    0.04    0.00   71594         __elmfire_subs_MOD_accumulate_cpu_usage [26]
+-----------------------------------------------
+                0.03    0.00      20/20          __elmfire_io_MOD_read_weather_fuel_topography [23]
+[27]     0.0    0.03    0.00      20         __elmfire_io_MOD_read_bsq_raster [27]
+-----------------------------------------------
+                0.01    0.02       1/1           MAIN__ [1]
+[28]     0.0    0.01    0.02       1         __elmfire_init_MOD_init_rasters [28]
+                0.02    0.00       1/1           __elmfire_init_MOD_calc_wind_adjustment_factor_everywhere [30]
+-----------------------------------------------
+                0.02    0.00       9/9           __elmfire_io_MOD_main_dump_routine [25]
+[29]     0.0    0.02    0.00       9         __elmfire_io_MOD_write_bil_raster [29]
+-----------------------------------------------
+                0.02    0.00       1/1           __elmfire_init_MOD_init_rasters [28]
+[30]     0.0    0.02    0.00       1         __elmfire_init_MOD_calc_wind_adjustment_factor_everywhere [30]
+-----------------------------------------------
+                0.01    0.00 3572108/3572108     __elmfire_subs_MOD_interp_raster_linkedlist [19]
+[31]     0.0    0.01    0.00 3572108         __elmfire_subs_MOD_wx_icol_from_analysis_ix [31]
+-----------------------------------------------
+                0.00    0.00 3572108/3572108     __elmfire_subs_MOD_interp_raster_linkedlist [19]
+[51]     0.0    0.00    0.00 3572108         __elmfire_subs_MOD_wx_irow_from_analysis_iy [51]
+-----------------------------------------------
+                0.00    0.00   30545/82877       __elmfire_level_set_MOD_untag_cells [12]
+                0.00    0.00   52332/82877       __elmfire_level_set_MOD_level_set_propagation [3]
+[52]     0.0    0.00    0.00   82877         __elmfire_subs_MOD_delete_node [52]
+-----------------------------------------------
+                0.00    0.00   76702/76702       __elmfire_level_set_MOD_level_set_propagation [3]
+[53]     0.0    0.00    0.00   76702         __elmfire_subs_MOD_interp_wd_raster_single [53]
+-----------------------------------------------
+                0.00    0.00    5096/17317       __elmfire_init_MOD_read_fuel_model_table [22]
+                0.00    0.00   12221/17317       __elmfire_init_MOD_init_lookup_tables [63]
+[54]     0.0    0.00    0.00   17317         __elmfire_init_MOD_calc_wind_adjustment_factor_single [54]
+-----------------------------------------------
+                0.00    0.00    7680/7680        __elmfire_spotting_MOD_ember_trajectory [21]
+[55]     0.0    0.00    0.00    7680         __elmfire_subs_MOD_erfinv [55]
+-----------------------------------------------
+                0.00    0.00       2/4           __elmfire_io_MOD_main_dump_routine [25]
+                0.00    0.00       2/4           MAIN__ [1]
+[56]     0.0    0.00    0.00       4         __elmfire_subs_MOD_allocate_empty_raster [56]
+-----------------------------------------------
+                0.00    0.00       3/3           __elmfire_level_set_MOD_level_set_propagation [3]
+[57]     0.0    0.00    0.00       3         __elmfire_subs_MOD_new_dll [57]
+-----------------------------------------------
+                0.00    0.00       2/2           MAIN__ [1]
+[58]     0.0    0.00    0.00       2         __elmfire_io_MOD_read_bsq_header [58]
+-----------------------------------------------
+                0.00    0.00       2/2           __elmfire_subs_MOD_append [16]
+[59]     0.0    0.00    0.00       2         __elmfire_subs_MOD_init [59]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[60]     0.0    0.00    0.00       1         __elmfire_calibration_MOD_read_calibration_by_pyrome [60]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[61]     0.0    0.00    0.00       1         __elmfire_ignition_MOD_allocate_ignition_arrays [61]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[62]     0.0    0.00    0.00       1         __elmfire_init_MOD_check_inputs [62]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[63]     0.0    0.00    0.00       1         __elmfire_init_MOD_init_lookup_tables [63]
+                0.00    0.00   12221/17317       __elmfire_init_MOD_calc_wind_adjustment_factor_single [54]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[64]     0.0    0.00    0.00       1         __elmfire_init_MOD_read_building_fuel_model_table [64]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[65]     0.0    0.00    0.00       1         __elmfire_init_MOD_set_misc_parameters [65]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[66]     0.0    0.00    0.00       1         __elmfire_init_MOD_setup_shared_memory_1 [66]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[67]     0.0    0.00    0.00       1         __elmfire_init_MOD_setup_shared_memory_2 [67]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[68]     0.0    0.00    0.00       1         __elmfire_init_MOD_write_fuel_model_table [68]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[69]     0.0    0.00    0.00       1         __elmfire_io_MOD_postprocess [69]
+                0.00    0.00       1/1           __elmfire_subs_MOD_hour_of_year_to_timestamp [85]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[70]     0.0    0.00    0.00       1         __elmfire_io_MOD_setup_parallel_io [70]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[71]     0.0    0.00    0.00       1         __elmfire_namelists_MOD_read_calibration [71]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[72]     0.0    0.00    0.00       1         __elmfire_namelists_MOD_read_computational_domain [72]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[73]     0.0    0.00    0.00       1         __elmfire_namelists_MOD_read_inputs [73]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[74]     0.0    0.00    0.00       1         __elmfire_namelists_MOD_read_misc [74]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[75]     0.0    0.00    0.00       1         __elmfire_namelists_MOD_read_monte_carlo [75]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[76]     0.0    0.00    0.00       1         __elmfire_namelists_MOD_read_outputs [76]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[77]     0.0    0.00    0.00       1         __elmfire_namelists_MOD_read_simulator [77]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[78]     0.0    0.00    0.00       1         __elmfire_namelists_MOD_read_smoke [78]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[79]     0.0    0.00    0.00       1         __elmfire_namelists_MOD_read_spotting [79]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[80]     0.0    0.00    0.00       1         __elmfire_namelists_MOD_read_suppression [80]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[81]     0.0    0.00    0.00       1         __elmfire_namelists_MOD_read_time_control [81]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[82]     0.0    0.00    0.00       1         __elmfire_namelists_MOD_read_wui [82]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[83]     0.0    0.00    0.00       1         __elmfire_spotting_MOD_set_spotting_parameters [83]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[84]     0.0    0.00    0.00       1         __elmfire_subs_MOD_get_operating_system [84]
+-----------------------------------------------
+                0.00    0.00       1/1           __elmfire_io_MOD_postprocess [69]
+[85]     0.0    0.00    0.00       1         __elmfire_subs_MOD_hour_of_year_to_timestamp [85]
+-----------------------------------------------
+                0.00    0.00       1/1           __elmfire_level_set_MOD_level_set_propagation [3]
+[86]     0.0    0.00    0.00       1         __elmfire_subs_MOD_icol_from_x [86]
+-----------------------------------------------
+                0.00    0.00       1/1           __elmfire_level_set_MOD_level_set_propagation [3]
+[87]     0.0    0.00    0.00       1         __elmfire_subs_MOD_irow_from_y [87]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[88]     0.0    0.00    0.00       1         __elmfire_subs_MOD_map_fine_to_coarse [88]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[89]     0.0    0.00    0.00       1         __elmfire_subs_MOD_perturb_rasters [89]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[90]     0.0    0.00    0.00       1         __elmfire_subs_MOD_shutdown [90]
+                0.00    0.00       1/1           __elmfire_subs_MOD_write_timings_to_disk [93]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [1]
+[91]     0.0    0.00    0.00       1         __elmfire_subs_MOD_sunrise_sunset_calcs [91]
+-----------------------------------------------
+                0.00    0.00       1/1           __elmfire_level_set_MOD_level_set_propagation [3]
+[92]     0.0    0.00    0.00       1         __elmfire_subs_MOD_tidy [92]
+-----------------------------------------------
+                0.00    0.00       1/1           __elmfire_subs_MOD_shutdown [90]
+[93]     0.0    0.00    0.00       1         __elmfire_subs_MOD_write_timings_to_disk [93]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+   [1] MAIN__ (elmfire.f90)    [7] __elmfire_level_set_MOD_limit_gradients [26] __elmfire_subs_MOD_accumulate_cpu_usage
+  [60] __elmfire_calibration_MOD_read_calibration_by_pyrome [10] __elmfire_level_set_MOD_rk2_integrate [56] __elmfire_subs_MOD_allocate_empty_raster
+  [61] __elmfire_ignition_MOD_allocate_ignition_arrays [14] __elmfire_level_set_MOD_tag_band [16] __elmfire_subs_MOD_append
+  [30] __elmfire_init_MOD_calc_wind_adjustment_factor_everywhere [12] __elmfire_level_set_MOD_untag_cells [52] __elmfire_subs_MOD_delete_node
+  [54] __elmfire_init_MOD_calc_wind_adjustment_factor_single [4] __elmfire_level_set_MOD_ux_and_uy_elliptical [55] __elmfire_subs_MOD_erfinv
+  [62] __elmfire_init_MOD_check_inputs [71] __elmfire_namelists_MOD_read_calibration [84] __elmfire_subs_MOD_get_operating_system
+  [63] __elmfire_init_MOD_init_lookup_tables [72] __elmfire_namelists_MOD_read_computational_domain [85] __elmfire_subs_MOD_hour_of_year_to_timestamp
+  [28] __elmfire_init_MOD_init_rasters [73] __elmfire_namelists_MOD_read_inputs [86] __elmfire_subs_MOD_icol_from_x
+  [64] __elmfire_init_MOD_read_building_fuel_model_table [74] __elmfire_namelists_MOD_read_misc [59] __elmfire_subs_MOD_init
+  [22] __elmfire_init_MOD_read_fuel_model_table [75] __elmfire_namelists_MOD_read_monte_carlo [19] __elmfire_subs_MOD_interp_raster_linkedlist
+  [65] __elmfire_init_MOD_set_misc_parameters [76] __elmfire_namelists_MOD_read_outputs [17] __elmfire_subs_MOD_interp_raster_linkedlist_single
+  [66] __elmfire_init_MOD_setup_shared_memory_1 [77] __elmfire_namelists_MOD_read_simulator [24] __elmfire_subs_MOD_interp_wd_raster
+  [67] __elmfire_init_MOD_setup_shared_memory_2 [78] __elmfire_namelists_MOD_read_smoke [53] __elmfire_subs_MOD_interp_wd_raster_single
+  [68] __elmfire_init_MOD_write_fuel_model_table [79] __elmfire_namelists_MOD_read_spotting [87] __elmfire_subs_MOD_irow_from_y
+  [25] __elmfire_io_MOD_main_dump_routine [80] __elmfire_namelists_MOD_read_suppression [88] __elmfire_subs_MOD_map_fine_to_coarse
+  [69] __elmfire_io_MOD_postprocess [81] __elmfire_namelists_MOD_read_time_control [57] __elmfire_subs_MOD_new_dll
+  [58] __elmfire_io_MOD_read_bsq_header [82] __elmfire_namelists_MOD_read_wui [89] __elmfire_subs_MOD_perturb_rasters
+  [27] __elmfire_io_MOD_read_bsq_raster [21] __elmfire_spotting_MOD_ember_trajectory [90] __elmfire_subs_MOD_shutdown
+  [23] __elmfire_io_MOD_read_weather_fuel_topography [83] __elmfire_spotting_MOD_set_spotting_parameters [91] __elmfire_subs_MOD_sunrise_sunset_calcs
+  [70] __elmfire_io_MOD_setup_parallel_io [18] __elmfire_spotting_MOD_spotting [92] __elmfire_subs_MOD_tidy
+  [29] __elmfire_io_MOD_write_bil_raster [15] __elmfire_spread_rate_MOD_crown_spread_rate [93] __elmfire_subs_MOD_write_timings_to_disk
+   [8] __elmfire_level_set_MOD_calc_cfl [6] __elmfire_spread_rate_MOD_ellipse_ucb [31] __elmfire_subs_MOD_wx_icol_from_analysis_ix
+   [9] __elmfire_level_set_MOD_calc_normal_vectors [11] __elmfire_spread_rate_MOD_hrr_transient [51] __elmfire_subs_MOD_wx_irow_from_analysis_iy
+  [13] __elmfire_level_set_MOD_half_superbee [20] __elmfire_spread_rate_MOD_surface_spread_rate
+   [3] __elmfire_level_set_MOD_level_set_propagation [5] __elmfire_spread_rate_MOD_umd_ucb_bldg_spread
