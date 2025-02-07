@@ -1,0 +1,993 @@
+
+Sorted summary for file /home/katrinasharonin/Downloads/elmfire/build/linux/bin/elmfire_debug_2024.0916
+----------------------------------------------
+
+   58.09 elmfire_spread_rate.f90:349
+   36.44 elmfire_spread_rate.f90:347
+    1.20 elmfire_spread_rate.f90:427
+    0.66 elmfire_spread_rate.f90:356
+ Percent |	Source code & Disassembly of elmfire_debug_2024.0916 for cpu-clock:pppH (7641097 samples, percent: local period)
+--------------------------------------------------------------------------------------------------------------------------------
+         :
+         :
+         :
+         :           Disassembly of section .text:
+         :
+         :           000000000002b3b4 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread>:
+         :           __elmfire_spread_rate_MOD_umd_ucb_bldg_spread():
+    0.00 :   2b3b4:       stp     x29, x30, [sp, #-320]!
+    0.00 :   2b3b8:       mov     x29, sp
+    0.00 :   2b3bc:       stp     x19, x20, [sp, #16]
+    0.00 :   2b3c0:       stp     d8, d9, [sp, #32]
+    0.00 :   2b3c4:       str     d10, [sp, #48]
+    0.00 :   2b3c8:       mov     x3, x30
+    0.00 :   2b3cc:       str     x0, [sp, #88]
+    0.00 :   2b3d0:       str     x1, [sp, #80]
+    0.00 :   2b3d4:       str     x2, [sp, #72]
+    0.00 :   2b3d8:       mov     x30, x3
+    0.00 :   2b3dc:       xpaclri
+    0.00 :   2b3e0:       mov     x0, x30
+    0.00 :   2b3e4:       bl      6060 <_mcount@plt>
+    0.00 :   2b3e8:       adrp    x0, 18bb000 <__elmfire_vars_MOD_ws_filename+0x88>
+    0.00 :   2b3ec:       add     x0, x0, #0xc90
+    0.00 :   2b3f0:       ldr     w0, [x0]
+    0.00 :   2b3f4:       and     w0, w0, #0x1
+    0.00 :   2b3f8:       and     w0, w0, #0xff
+    0.00 :   2b3fc:       cmp     w0, #0x0
+    0.00 :   2b400:       b.eq    2b418 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x64>  // b.none
+    0.00 :   2b404:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2b408:       add     x1, x0, #0xb18
+    0.00 :   2b40c:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2b410:       add     x0, x0, #0xb58
+    0.00 :   2b414:       bl      6350 <_gfortran_runtime_error_at@plt>
+    0.00 :   2b418:       adrp    x0, 18bb000 <__elmfire_vars_MOD_ws_filename+0x88>
+    0.00 :   2b41c:       add     x0, x0, #0xc90
+    0.00 :   2b420:       mov     w1, #0x1                        // #1
+    0.00 :   2b424:       str     w1, [x0]
+    0.00 :   2b428:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b42c:       fmov    s0, w0
+    0.00 :   2b430:       str     s0, [sp, #284]
+    0.00 :   2b434:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b438:       fmov    s0, w0
+    0.00 :   2b43c:       str     s0, [sp, #280]
+    0.00 :   2b440:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b444:       fmov    s0, w0
+    0.00 :   2b448:       str     s0, [sp, #288]
+    0.00 :   2b44c:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b450:       fmov    s0, w0
+    0.00 :   2b454:       str     s0, [sp, #292]
+    0.00 :   2b458:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b45c:       fmov    s0, w0
+    0.00 :   2b460:       str     s0, [sp, #296]
+    0.00 :   2b464:       mov     w0, #0x1f01                     // #7937
+    0.00 :   2b468:       movk    w0, #0xfa0a, lsl #16
+    0.00 :   2b46c:       str     w0, [sp, #300]
+    0.00 :   2b470:       mov     w0, #0x1f01                     // #7937
+    0.00 :   2b474:       movk    w0, #0xfa0a, lsl #16
+    0.00 :   2b478:       str     w0, [sp, #304]
+    0.00 :   2b47c:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b480:       fmov    s0, w0
+    0.00 :   2b484:       str     s0, [sp, #276]
+    0.00 :   2b488:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b48c:       fmov    s0, w0
+    0.00 :   2b490:       str     s0, [sp, #272]
+    0.00 :   2b494:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b498:       fmov    s0, w0
+    0.00 :   2b49c:       str     s0, [sp, #268]
+    0.00 :   2b4a0:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b4a4:       fmov    s0, w0
+    0.00 :   2b4a8:       str     s0, [sp, #264]
+    0.00 :   2b4ac:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b4b0:       fmov    s0, w0
+    0.00 :   2b4b4:       str     s0, [sp, #260]
+    0.00 :   2b4b8:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b4bc:       fmov    s0, w0
+    0.00 :   2b4c0:       str     s0, [sp, #256]
+    0.00 :   2b4c4:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b4c8:       fmov    s0, w0
+    0.00 :   2b4cc:       str     s0, [sp, #252]
+    0.00 :   2b4d0:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b4d4:       fmov    s0, w0
+    0.00 :   2b4d8:       str     s0, [sp, #248]
+    0.00 :   2b4dc:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b4e0:       fmov    s0, w0
+    0.00 :   2b4e4:       str     s0, [sp, #244]
+    0.00 :   2b4e8:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b4ec:       fmov    s0, w0
+    0.00 :   2b4f0:       str     s0, [sp, #240]
+    0.00 :   2b4f4:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b4f8:       fmov    s0, w0
+    0.00 :   2b4fc:       str     s0, [sp, #236]
+    0.00 :   2b500:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b504:       fmov    s0, w0
+    0.00 :   2b508:       str     s0, [sp, #232]
+    0.00 :   2b50c:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b510:       fmov    s0, w0
+    0.00 :   2b514:       str     s0, [sp, #228]
+    0.00 :   2b518:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b51c:       fmov    s0, w0
+    0.00 :   2b520:       str     s0, [sp, #224]
+    0.00 :   2b524:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b528:       fmov    s0, w0
+    0.00 :   2b52c:       str     s0, [sp, #308]
+    0.00 :   2b530:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b534:       fmov    s0, w0
+    0.00 :   2b538:       str     s0, [sp, #220]
+    0.00 :   2b53c:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b540:       fmov    s0, w0
+    0.00 :   2b544:       str     s0, [sp, #216]
+    0.00 :   2b548:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b54c:       fmov    s0, w0
+    0.00 :   2b550:       str     s0, [sp, #212]
+    0.00 :   2b554:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b558:       fmov    s0, w0
+    0.00 :   2b55c:       str     s0, [sp, #208]
+    0.00 :   2b560:       mov     w0, #0x1f01                     // #7937
+    0.00 :   2b564:       movk    w0, #0xfa0a, lsl #16
+    0.00 :   2b568:       str     w0, [sp, #204]
+    0.00 :   2b56c:       mov     w0, #0x1f01                     // #7937
+    0.00 :   2b570:       movk    w0, #0xfa0a, lsl #16
+    0.00 :   2b574:       str     w0, [sp, #200]
+    0.00 :   2b578:       mov     w0, #0x1f01                     // #7937
+    0.00 :   2b57c:       movk    w0, #0xfa0a, lsl #16
+    0.00 :   2b580:       str     w0, [sp, #196]
+    0.00 :   2b584:       mov     w0, #0x1f01                     // #7937
+    0.00 :   2b588:       movk    w0, #0xfa0a, lsl #16
+    0.00 :   2b58c:       str     w0, [sp, #192]
+    0.00 :   2b590:       mov     w0, #0x1f01                     // #7937
+    0.00 :   2b594:       movk    w0, #0xfa0a, lsl #16
+    0.00 :   2b598:       str     w0, [sp, #188]
+    0.00 :   2b59c:       mov     w0, #0x1f01                     // #7937
+    0.00 :   2b5a0:       movk    w0, #0xfa0a, lsl #16
+    0.00 :   2b5a4:       str     w0, [sp, #184]
+    0.00 :   2b5a8:       mov     w0, #0x1f01                     // #7937
+    0.00 :   2b5ac:       movk    w0, #0xfa0a, lsl #16
+    0.00 :   2b5b0:       str     w0, [sp, #312]
+    0.00 :   2b5b4:       mov     w0, #0x1f01                     // #7937
+    0.00 :   2b5b8:       movk    w0, #0xfa0a, lsl #16
+    0.00 :   2b5bc:       str     w0, [sp, #180]
+    0.00 :   2b5c0:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b5c4:       fmov    s0, w0
+    0.00 :   2b5c8:       str     s0, [sp, #176]
+    0.00 :   2b5cc:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b5d0:       fmov    s0, w0
+    0.00 :   2b5d4:       str     s0, [sp, #316]
+    0.00 :   2b5d8:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b5dc:       fmov    s0, w0
+    0.00 :   2b5e0:       str     s0, [sp, #172]
+    0.00 :   2b5e4:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b5e8:       fmov    s0, w0
+    0.00 :   2b5ec:       str     s0, [sp, #168]
+    0.00 :   2b5f0:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b5f4:       fmov    s0, w0
+    0.00 :   2b5f8:       str     s0, [sp, #164]
+    0.00 :   2b5fc:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b600:       fmov    s0, w0
+    0.00 :   2b604:       str     s0, [sp, #160]
+    0.00 :   2b608:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b60c:       fmov    s0, w0
+    0.00 :   2b610:       str     s0, [sp, #156]
+    0.00 :   2b614:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b618:       fmov    s0, w0
+    0.00 :   2b61c:       str     s0, [sp, #152]
+    0.00 :   2b620:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b624:       fmov    s0, w0
+    0.00 :   2b628:       str     s0, [sp, #148]
+    0.00 :   2b62c:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b630:       fmov    s0, w0
+    0.00 :   2b634:       str     s0, [sp, #144]
+    0.00 :   2b638:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b63c:       fmov    s0, w0
+    0.00 :   2b640:       str     s0, [sp, #140]
+    0.00 :   2b644:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b648:       fmov    s0, w0
+    0.00 :   2b64c:       str     s0, [sp, #136]
+    0.00 :   2b650:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b654:       fmov    s0, w0
+    0.00 :   2b658:       str     s0, [sp, #132]
+    0.00 :   2b65c:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b660:       fmov    s0, w0
+    0.00 :   2b664:       str     s0, [sp, #128]
+    0.00 :   2b668:       mov     w0, #0x1f01                     // #7937
+    0.00 :   2b66c:       movk    w0, #0xfa0a, lsl #16
+    0.00 :   2b670:       str     w0, [sp, #124]
+    0.00 :   2b674:       mov     w0, #0x1f01                     // #7937
+    0.00 :   2b678:       movk    w0, #0xfa0a, lsl #16
+    0.00 :   2b67c:       str     w0, [sp, #120]
+    0.00 :   2b680:       mov     w0, #0x7fa00000                 // #2141192192
+    0.00 :   2b684:       fmov    s0, w0
+    0.00 :   2b688:       str     s0, [sp, #116]
+    0.00 :   2b68c:       ldr     x0, [sp, #88]
+    0.00 :   2b690:       ldr     x0, [x0]
+    0.00 :   2b694:       ldr     w0, [x0, #328]
+    0.00 :   2b698:       sxtw    x1, w0
+    0.00 :   2b69c:       cmp     x1, #0x0
+    0.00 :   2b6a0:       b.ge    2b6c0 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x30c>  // b.tcont
+    0.00 :   2b6a4:       mov     x3, #0x0                        // #0
+    0.00 :   2b6a8:       mov     x2, x1
+    0.00 :   2b6ac:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2b6b0:       add     x1, x0, #0x470
+    0.00 :   2b6b4:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2b6b8:       add     x0, x0, #0xb98
+    0.00 :   2b6bc:       bl      6350 <_gfortran_runtime_error_at@plt>
+    0.00 :   2b6c0:       cmp     x1, #0x64
+    0.00 :   2b6c4:       b.le    2b6e4 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x330>
+    0.00 :   2b6c8:       mov     x3, #0x64                       // #100
+    0.00 :   2b6cc:       mov     x2, x1
+    0.00 :   2b6d0:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2b6d4:       add     x1, x0, #0x510
+    0.00 :   2b6d8:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2b6dc:       add     x0, x0, #0xb98
+    0.00 :   2b6e0:       bl      6350 <_gfortran_runtime_error_at@plt>
+    0.00 :   2b6e4:       adrp    x0, 15c000 <_GLOBAL_OFFSET_TABLE_+0x3e0>
+    0.00 :   2b6e8:       ldr     x2, [x0, #1576]
+    0.00 :   2b6ec:       mov     x0, x1
+    0.00 :   2b6f0:       lsl     x0, x0, #5
+    0.00 :   2b6f4:       sub     x0, x0, x1
+    0.00 :   2b6f8:       lsl     x0, x0, #2
+    0.00 :   2b6fc:       add     x0, x2, x0
+    0.00 :   2b700:       ldr     s0, [x0, #116]
+    0.00 :   2b704:       fmov    s1, #1.000000000000000000e+00
+    0.00 :   2b708:       fsub    s0, s1, s0
+    0.00 :   2b70c:       str     s0, [sp, #136]
+    0.00 :   2b710:       ldr     x0, [sp, #88]
+    0.00 :   2b714:       ldr     x0, [x0]
+    0.00 :   2b718:       ldr     w0, [x0, #328]
+    0.00 :   2b71c:       sxtw    x1, w0
+    0.00 :   2b720:       cmp     x1, #0x0
+    0.00 :   2b724:       b.ge    2b744 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x390>  // b.tcont
+    0.00 :   2b728:       mov     x3, #0x0                        // #0
+    0.00 :   2b72c:       mov     x2, x1
+    0.00 :   2b730:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2b734:       add     x1, x0, #0x470
+    0.00 :   2b738:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2b73c:       add     x0, x0, #0xbd8
+    0.00 :   2b740:       bl      6350 <_gfortran_runtime_error_at@plt>
+    0.00 :   2b744:       cmp     x1, #0x64
+    0.00 :   2b748:       b.le    2b768 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x3b4>
+    0.00 :   2b74c:       mov     x3, #0x64                       // #100
+    0.00 :   2b750:       mov     x2, x1
+    0.00 :   2b754:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2b758:       add     x1, x0, #0x510
+    0.00 :   2b75c:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2b760:       add     x0, x0, #0xbd8
+    0.00 :   2b764:       bl      6350 <_gfortran_runtime_error_at@plt>
+    0.00 :   2b768:       adrp    x0, 15c000 <_GLOBAL_OFFSET_TABLE_+0x3e0>
+    0.00 :   2b76c:       ldr     x2, [x0, #1576]
+    0.00 :   2b770:       mov     x0, x1
+    0.00 :   2b774:       lsl     x0, x0, #5
+    0.00 :   2b778:       sub     x0, x0, x1
+    0.00 :   2b77c:       lsl     x0, x0, #2
+    0.00 :   2b780:       add     x0, x2, x0
+    0.00 :   2b784:       ldr     s0, [x0, #108]
+    0.00 :   2b788:       str     s0, [sp, #220]
+    0.00 :   2b78c:       adrp    x0, 15b000 <__do_global_dtors_aux_fini_array_entry>
+    0.00 :   2b790:       ldr     x0, [x0, #3664]
+    0.00 :   2b794:       ldr     s1, [x0]
+    0.00 :   2b798:       adrp    x0, 15b000 <__do_global_dtors_aux_fini_array_entry>
+    0.00 :   2b79c:       ldr     x0, [x0, #3664]
+    0.00 :   2b7a0:       ldr     s0, [x0]
+    0.00 :   2b7a4:       fmul    s0, s1, s0
+    0.00 :   2b7a8:       str     s0, [sp, #116]
+    0.00 :   2b7ac:       adrp    x0, 15b000 <__do_global_dtors_aux_fini_array_entry>
+    0.00 :   2b7b0:       ldr     x0, [x0, #3664]
+    0.00 :   2b7b4:       ldr     s0, [x0]
+    0.00 :   2b7b8:       fmov    s1, #1.000000000000000000e+00
+    0.00 :   2b7bc:       fdiv    s0, s1, s0
+    0.00 :   2b7c0:       str     s0, [sp, #248]
+    0.00 :   2b7c4:       adrp    x0, 15b000 <__do_global_dtors_aux_fini_array_entry>
+    0.00 :   2b7c8:       ldr     x0, [x0, #3664]
+    0.00 :   2b7cc:       ldr     s1, [x0]
+    0.00 :   2b7d0:       fmov    s0, #5.000000000000000000e-01
+    0.00 :   2b7d4:       fmul    s0, s1, s0
+    0.00 :   2b7d8:       str     s0, [sp, #176]
+    0.00 :   2b7dc:       ldr     x0, [sp, #80]
+    0.00 :   2b7e0:       ldr     x0, [x0]
+    0.00 :   2b7e4:       str     x0, [sp, #104]
+    0.00 :   2b7e8:       mov     w0, #0x5                        // #5
+    0.00 :   2b7ec:       str     w0, [sp, #180]
+    0.00 :   2b7f0:       str     wzr, [sp, #304]
+    0.00 :   2b7f4:       str     wzr, [sp, #300]
+    0.00 :   2b7f8:       str     wzr, [sp, #296]
+    0.00 :   2b7fc:       str     wzr, [sp, #292]
+    0.00 :   2b800:       ldr     x0, [sp, #88]
+    0.00 :   2b804:       ldr     x0, [x0]
+    0.00 :   2b808:       ldr     w1, [x0, #56]
+    0.01 :   2b80c:       ldr     w0, [sp, #180]
+    0.00 :   2b810:       sub     w0, w1, w0
+    0.00 :   2b814:       str     w0, [sp, #192]
+    0.00 :   2b818:       ldr     x0, [sp, #88]
+    0.00 :   2b81c:       ldr     x0, [x0]
+    0.00 :   2b820:       ldr     w1, [x0, #60]
+    0.00 :   2b824:       ldr     w0, [sp, #180]
+    0.00 :   2b828:       sub     w0, w1, w0
+    0.00 :   2b82c:       str     w0, [sp, #204]
+    0.00 :   2b830:       mov     w0, #0x1                        // #1
+    0.00 :   2b834:       ldr     w2, [sp, #192]
+    0.00 :   2b838:       ldr     w1, [sp, #192]
+    0.00 :   2b83c:       cmp     w2, w0
+    0.00 :   2b840:       csel    w0, w1, w0, ge  // ge = tcont
+    0.00 :   2b844:       str     w0, [sp, #188]
+    0.00 :   2b848:       mov     w0, #0x1                        // #1
+    0.00 :   2b84c:       ldr     w2, [sp, #204]
+    0.00 :   2b850:       ldr     w1, [sp, #204]
+    0.00 :   2b854:       cmp     w2, w0
+    0.00 :   2b858:       csel    w0, w1, w0, ge  // ge = tcont
+    0.00 :   2b85c:       str     w0, [sp, #200]
+    0.00 :   2b860:       ldr     x0, [sp, #88]
+    0.00 :   2b864:       ldr     x0, [x0]
+    0.00 :   2b868:       ldr     w0, [x0, #56]
+    0.00 :   2b86c:       ldr     w1, [sp, #180]
+    0.00 :   2b870:       add     w0, w1, w0
+    0.00 :   2b874:       str     w0, [sp, #192]
+    0.00 :   2b878:       ldr     x0, [sp, #88]
+    0.00 :   2b87c:       ldr     x0, [x0]
+    0.00 :   2b880:       ldr     w0, [x0, #60]
+    0.00 :   2b884:       ldr     w1, [sp, #180]
+    0.00 :   2b888:       add     w0, w1, w0
+    0.00 :   2b88c:       str     w0, [sp, #204]
+    0.00 :   2b890:       adrp    x0, 15b000 <__do_global_dtors_aux_fini_array_entry>
+    0.00 :   2b894:       ldr     x0, [x0, #3232]
+    0.00 :   2b898:       ldr     w0, [x0]
+    0.00 :   2b89c:       ldr     w2, [sp, #192]
+    0.00 :   2b8a0:       ldr     w1, [sp, #192]
+    0.00 :   2b8a4:       cmp     w2, w0
+    0.00 :   2b8a8:       csel    w0, w1, w0, le
+    0.00 :   2b8ac:       str     w0, [sp, #184]
+    0.00 :   2b8b0:       adrp    x0, 15c000 <_GLOBAL_OFFSET_TABLE_+0x3e0>
+    0.00 :   2b8b4:       ldr     x0, [x0, #2776]
+    0.00 :   2b8b8:       ldr     w0, [x0]
+    0.00 :   2b8bc:       ldr     w2, [sp, #204]
+    0.00 :   2b8c0:       ldr     w1, [sp, #204]
+    0.00 :   2b8c4:       cmp     w2, w0
+    0.00 :   2b8c8:       csel    w0, w1, w0, le
+    0.00 :   2b8cc:       str     w0, [sp, #196]
+    0.00 :   2b8d0:       ldr     x0, [sp, #80]
+    0.00 :   2b8d4:       ldr     w20, [x0, #16]
+    0.00 :   2b8d8:       mov     w0, #0x1                        // #1
+    0.00 :   2b8dc:       str     w0, [sp, #312]
+    0.00 :   2b8e0:       ldr     w19, [sp, #312]
+ elmfire_spread_rate.f90:347    4.78 :   2b8e4:       ldr     w0, [sp, #312]
+    0.00 :   2b8e8:       cmp     w0, w20
+    0.15 :   2b8ec:       cset    w0, gt
+    0.00 :   2b8f0:       cmp     w0, #0x0
+    0.46 :   2b8f4:       b.ne    2be18 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xa64>  // b.any
+    1.85 :   2b8f8:       ldr     w1, [sp, #312]
+    0.13 :   2b8fc:       mov     w0, #0x7fffffff                 // #2147483647
+    0.00 :   2b900:       cmp     w1, w0
+    0.25 :   2b904:       b.ne    2b91c <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x568>  // b.any
+    0.00 :   2b908:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2b90c:       add     x1, x0, #0xc18
+    0.00 :   2b910:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2b914:       add     x0, x0, #0xc38
+    0.00 :   2b918:       bl      6350 <_gfortran_runtime_error_at@plt>
+    0.00 :   2b91c:       ldr     x0, [sp, #104]
+    0.25 :   2b920:       ldr     w0, [x0, #56]
+    0.00 :   2b924:       ldr     w1, [sp, #188]
+    0.00 :   2b928:       cmp     w1, w0
+    0.00 :   2b92c:       cset    w1, le
+    0.01 :   2b930:       ldr     x0, [sp, #104]
+    0.00 :   2b934:       ldr     w0, [x0, #60]
+ elmfire_spread_rate.f90:349    1.72 :   2b938:       ldr     w2, [sp, #200]
+    0.00 :   2b93c:       cmp     w2, w0
+    0.25 :   2b940:       cset    w0, le
+    0.00 :   2b944:       and     w1, w1, w0
+    0.19 :   2b948:       ldr     x0, [sp, #104]
+    2.00 :   2b94c:       ldr     w0, [x0, #56]
+    4.49 :   2b950:       ldr     w2, [sp, #184]
+    0.00 :   2b954:       cmp     w2, w0
+    0.44 :   2b958:       cset    w0, ge  // ge = tcont
+    0.00 :   2b95c:       and     w1, w1, w0
+    0.45 :   2b960:       ldr     x0, [sp, #104]
+    3.90 :   2b964:       ldr     w0, [x0, #60]
+ elmfire_spread_rate.f90:349   38.44 :   2b968:       ldr     w2, [sp, #196]
+    0.00 :   2b96c:       cmp     w2, w0
+ elmfire_spread_rate.f90:349    3.85 :   2b970:       cset    w0, ge  // ge = tcont
+    0.00 :   2b974:       and     w0, w1, w0
+    3.69 :   2b978:       cmp     w0, #0x0
+    0.00 :   2b97c:       b.eq    2bdd0 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xa1c>  // b.none
+ elmfire_spread_rate.f90:356    0.66 :   2b980:       ldr     x0, [sp, #104]
+    0.00 :   2b984:       ldr     w0, [x0, #328]
+    0.00 :   2b988:       sxtw    x1, w0
+    0.00 :   2b98c:       cmp     x1, #0x0
+    0.00 :   2b990:       b.ge    2b9b0 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x5fc>  // b.tcont
+    0.00 :   2b994:       mov     x3, #0x0                        // #0
+    0.00 :   2b998:       mov     x2, x1
+    0.00 :   2b99c:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2b9a0:       add     x1, x0, #0x470
+    0.00 :   2b9a4:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2b9a8:       add     x0, x0, #0xc78
+    0.00 :   2b9ac:       bl      6350 <_gfortran_runtime_error_at@plt>
+    0.00 :   2b9b0:       cmp     x1, #0x64
+    0.00 :   2b9b4:       b.le    2b9d4 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x620>
+    0.00 :   2b9b8:       mov     x3, #0x64                       // #100
+    0.00 :   2b9bc:       mov     x2, x1
+    0.00 :   2b9c0:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2b9c4:       add     x1, x0, #0x510
+    0.00 :   2b9c8:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2b9cc:       add     x0, x0, #0xc78
+    0.00 :   2b9d0:       bl      6350 <_gfortran_runtime_error_at@plt>
+    0.00 :   2b9d4:       adrp    x0, 15c000 <_GLOBAL_OFFSET_TABLE_+0x3e0>
+    0.00 :   2b9d8:       ldr     x2, [x0, #1576]
+    0.00 :   2b9dc:       mov     x0, x1
+    0.00 :   2b9e0:       lsl     x0, x0, #5
+    0.00 :   2b9e4:       sub     x0, x0, x1
+    0.00 :   2b9e8:       lsl     x0, x0, #2
+    0.00 :   2b9ec:       add     x0, x2, x0
+    0.00 :   2b9f0:       ldr     s0, [x0, #100]
+    0.00 :   2b9f4:       str     s0, [sp, #208]
+    0.00 :   2b9f8:       ldr     x0, [sp, #104]
+    0.00 :   2b9fc:       ldr     s1, [x0, #36]
+    0.00 :   2ba00:       ldr     x0, [sp, #104]
+    0.00 :   2ba04:       ldr     s0, [x0, #36]
+    0.18 :   2ba08:       fmul    s0, s1, s0
+    0.00 :   2ba0c:       str     s0, [sp, #160]
+    0.00 :   2ba10:       ldr     x0, [sp, #88]
+    0.00 :   2ba14:       ldr     x0, [x0]
+    0.00 :   2ba18:       ldr     w1, [x0, #56]
+    0.00 :   2ba1c:       ldr     x0, [sp, #104]
+    0.00 :   2ba20:       ldr     w0, [x0, #56]
+    0.00 :   2ba24:       sub     w0, w1, w0
+    0.00 :   2ba28:       str     w0, [sp, #120]
+    0.00 :   2ba2c:       ldr     w0, [sp, #120]
+    0.00 :   2ba30:       cmp     w0, #0x0
+    0.00 :   2ba34:       b.ge    2ba48 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x694>  // b.tcont
+    0.00 :   2ba38:       ldr     w0, [sp, #304]
+    0.00 :   2ba3c:       sub     w0, w0, #0x1
+    0.00 :   2ba40:       str     w0, [sp, #304]
+    0.00 :   2ba44:       b       2ba54 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x6a0>
+    0.00 :   2ba48:       ldr     w0, [sp, #304]
+    0.00 :   2ba4c:       add     w0, w0, #0x1
+    0.00 :   2ba50:       str     w0, [sp, #304]
+    0.00 :   2ba54:       ldr     x0, [sp, #88]
+    0.00 :   2ba58:       ldr     x0, [x0]
+    0.00 :   2ba5c:       ldr     w1, [x0, #60]
+    0.00 :   2ba60:       ldr     x0, [sp, #104]
+    0.00 :   2ba64:       ldr     w0, [x0, #60]
+    0.00 :   2ba68:       sub     w0, w1, w0
+    0.00 :   2ba6c:       str     w0, [sp, #124]
+    0.00 :   2ba70:       ldr     w0, [sp, #124]
+    0.00 :   2ba74:       cmp     w0, #0x0
+    0.00 :   2ba78:       b.ge    2ba8c <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x6d8>  // b.tcont
+    0.00 :   2ba7c:       ldr     w0, [sp, #300]
+    0.00 :   2ba80:       sub     w0, w0, #0x1
+    0.00 :   2ba84:       str     w0, [sp, #300]
+    0.00 :   2ba88:       b       2ba98 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x6e4>
+    0.00 :   2ba8c:       ldr     w0, [sp, #300]
+    0.00 :   2ba90:       add     w0, w0, #0x1
+    0.00 :   2ba94:       str     w0, [sp, #300]
+    0.00 :   2ba98:       ldr     s0, [sp, #120]
+    0.01 :   2ba9c:       scvtf   s0, s0
+    0.00 :   2baa0:       str     s0, [sp, #252]
+    0.00 :   2baa4:       ldr     s0, [sp, #124]
+    0.00 :   2baa8:       scvtf   s0, s0
+    0.00 :   2baac:       str     s0, [sp, #256]
+    0.00 :   2bab0:       ldr     s0, [sp, #252]
+    0.02 :   2bab4:       fmul    s1, s0, s0
+    0.00 :   2bab8:       ldr     s0, [sp, #256]
+    0.03 :   2babc:       fmul    s0, s0, s0
+    0.00 :   2bac0:       fadd    s0, s1, s0
+    0.00 :   2bac4:       fsqrt   s0, s0
+    0.00 :   2bac8:       str     s0, [sp, #264]
+    0.00 :   2bacc:       adrp    x0, 15b000 <__do_global_dtors_aux_fini_array_entry>
+    0.00 :   2bad0:       ldr     x0, [x0, #3664]
+    0.00 :   2bad4:       ldr     s0, [x0]
+    0.00 :   2bad8:       ldr     s1, [sp, #264]
+    0.03 :   2badc:       fmul    s0, s1, s0
+    0.00 :   2bae0:       str     s0, [sp, #268]
+    0.00 :   2bae4:       ldr     s0, [sp, #264]
+    0.02 :   2bae8:       fcmp    s0, #0.0
+    0.00 :   2baec:       b.eq    2bde0 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xa2c>  // b.none
+    0.00 :   2baf0:       ldr     s1, [sp, #252]
+    0.00 :   2baf4:       ldr     s0, [sp, #256]
+    0.00 :   2baf8:       bl      6070 <atan2f@plt>
+    0.00 :   2bafc:       str     s0, [sp, #272]
+    0.00 :   2bb00:       ldr     x0, [sp, #104]
+    0.00 :   2bb04:       ldr     s0, [x0, #216]
+    0.00 :   2bb08:       mov     w0, #0x43870000                 // #1132920832
+    0.00 :   2bb0c:       fmov    s1, w0
+    0.07 :   2bb10:       fsub    s0, s1, s0
+    0.00 :   2bb14:       fmov    s1, s0
+    0.00 :   2bb18:       mov     w0, #0xfa35                     // #64053
+    0.00 :   2bb1c:       movk    w0, #0x3c8e, lsl #16
+    0.00 :   2bb20:       fmov    s0, w0
+    0.00 :   2bb24:       fmul    s0, s1, s0
+    0.00 :   2bb28:       str     s0, [sp, #284]
+    0.00 :   2bb2c:       ldr     s1, [sp, #272]
+    0.00 :   2bb30:       ldr     s0, [sp, #284]
+    0.01 :   2bb34:       fsub    s0, s1, s0
+    0.00 :   2bb38:       str     s0, [sp, #276]
+    0.00 :   2bb3c:       ldr     x0, [sp, #104]
+    0.00 :   2bb40:       ldr     s0, [x0, #16]
+    0.00 :   2bb44:       mov     w0, #0x999a                     // #39322
+    0.00 :   2bb48:       movk    w0, #0x3e99, lsl #16
+    0.00 :   2bb4c:       fmov    s1, w0
+    0.00 :   2bb50:       fmul    s0, s0, s1
+    0.00 :   2bb54:       ldr     x0, [sp, #104]
+    0.00 :   2bb58:       ldr     s2, [x0, #40]
+    0.00 :   2bb5c:       ldr     x0, [sp, #104]
+    0.00 :   2bb60:       ldr     s1, [x0, #44]
+    0.00 :   2bb64:       fsub    s1, s2, s1
+    0.00 :   2bb68:       fmul    s1, s0, s1
+    0.00 :   2bb6c:       ldr     s0, [sp, #160]
+    0.00 :   2bb70:       fdiv    s0, s1, s0
+    0.00 :   2bb74:       str     s0, [sp, #212]
+    0.00 :   2bb78:       add     x0, sp, #0x68
+    0.00 :   2bb7c:       ldr     x1, [sp, #72]
+    0.00 :   2bb80:       bl      2a260 <__elmfire_spread_rate_MOD_hrr_transient>
+    0.00 :   2bb84:       ldr     s1, [sp, #212]
+    0.00 :   2bb88:       ldr     s0, [sp, #160]
+    0.00 :   2bb8c:       fmul    s8, s1, s0
+    0.00 :   2bb90:       ldr     x0, [sp, #104]
+    0.00 :   2bb94:       ldr     s9, [x0, #40]
+    0.00 :   2bb98:       ldr     x0, [sp, #104]
+    0.00 :   2bb9c:       ldr     s10, [x0, #44]
+    0.00 :   2bba0:       ldr     s0, [sp, #276]
+    0.00 :   2bba4:       bl      5fe0 <cosf@plt>
+    0.03 :   2bba8:       fmul    s0, s10, s0
+    0.00 :   2bbac:       fsub    s0, s9, s0
+    0.00 :   2bbb0:       fdiv    s0, s8, s0
+    0.00 :   2bbb4:       str     s0, [sp, #156]
+    0.00 :   2bbb8:       ldr     s1, [sp, #156]
+    0.00 :   2bbbc:       ldr     s0, [sp, #176]
+    0.02 :   2bbc0:       fadd    s1, s1, s0
+    0.00 :   2bbc4:       ldr     s0, [sp, #268]
+    0.01 :   2bbc8:       fsub    s0, s1, s0
+    0.00 :   2bbcc:       fmov    s1, s0
+    0.00 :   2bbd0:       ldr     s0, [sp, #248]
+    0.01 :   2bbd4:       fmul    s0, s0, s1
+    0.00 :   2bbd8:       str     s0, [sp, #132]
+    0.00 :   2bbdc:       fmov    s1, #1.000000000000000000e+00
+    0.00 :   2bbe0:       ldr     s0, [sp, #132]
+    0.02 :   2bbe4:       fminnm  s0, s1, s0
+    0.00 :   2bbe8:       movi    v1.2s, #0x0
+    0.00 :   2bbec:       fmaxnm  s0, s0, s1
+    0.00 :   2bbf0:       str     s0, [sp, #140]
+    0.00 :   2bbf4:       ldr     s1, [sp, #136]
+    0.00 :   2bbf8:       ldr     s0, [sp, #140]
+    0.03 :   2bbfc:       fmul    s1, s1, s0
+    0.00 :   2bc00:       ldr     x0, [sp, #104]
+    0.00 :   2bc04:       ldr     s0, [x0, #348]
+    0.01 :   2bc08:       fmul    s0, s1, s0
+    0.00 :   2bc0c:       str     s0, [sp, #148]
+    0.00 :   2bc10:       ldr     x0, [sp, #104]
+    0.00 :   2bc14:       ldr     s0, [x0, #324]
+    0.00 :   2bc18:       ldr     s1, [sp, #156]
+    0.00 :   2bc1c:       fadd    s0, s1, s0
+    0.00 :   2bc20:       str     s0, [sp, #236]
+    0.00 :   2bc24:       ldr     s1, [sp, #236]
+    0.00 :   2bc28:       ldr     s0, [sp, #176]
+    0.00 :   2bc2c:       fadd    s1, s1, s0
+    0.00 :   2bc30:       ldr     s0, [sp, #268]
+    0.00 :   2bc34:       fsub    s0, s1, s0
+    0.00 :   2bc38:       fmov    s1, s0
+    0.00 :   2bc3c:       ldr     s0, [sp, #248]
+    0.00 :   2bc40:       fmul    s0, s0, s1
+    0.00 :   2bc44:       str     s0, [sp, #216]
+    0.00 :   2bc48:       fmov    s1, #1.000000000000000000e+00
+    0.00 :   2bc4c:       ldr     s0, [sp, #216]
+    0.00 :   2bc50:       fminnm  s0, s1, s0
+    0.00 :   2bc54:       movi    v1.2s, #0x0
+    0.00 :   2bc58:       fmaxnm  s0, s0, s1
+    0.00 :   2bc5c:       str     s0, [sp, #128]
+    0.00 :   2bc60:       ldr     s1, [sp, #128]
+    0.00 :   2bc64:       ldr     s0, [sp, #140]
+    0.01 :   2bc68:       fmul    s0, s1, s0
+    0.00 :   2bc6c:       ldr     s1, [sp, #128]
+    0.01 :   2bc70:       fsub    s0, s1, s0
+    0.00 :   2bc74:       str     s0, [sp, #224]
+    0.00 :   2bc78:       ldr     s1, [sp, #140]
+    0.00 :   2bc7c:       fmov    s0, #1.000000000000000000e+00
+    0.00 :   2bc80:       fcmpe   s1, s0
+    0.00 :   2bc84:       cset    w1, mi  // mi = first
+    0.00 :   2bc88:       ldr     s0, [sp, #140]
+    0.00 :   2bc8c:       fcmpe   s0, #0.0
+    0.00 :   2bc90:       cset    w0, gt
+    0.00 :   2bc94:       and     w0, w1, w0
+    0.00 :   2bc98:       cmp     w0, #0x0
+    0.00 :   2bc9c:       b.eq    2bccc <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x918>  // b.none
+    0.00 :   2bca0:       adrp    x0, 15b000 <__do_global_dtors_aux_fini_array_entry>
+    0.00 :   2bca4:       ldr     x0, [x0, #3664]
+    0.00 :   2bca8:       ldr     s1, [x0]
+    0.00 :   2bcac:       adrp    x0, 15b000 <__do_global_dtors_aux_fini_array_entry>
+    0.00 :   2bcb0:       ldr     x0, [x0, #3664]
+    0.00 :   2bcb4:       ldr     s2, [x0]
+    0.00 :   2bcb8:       ldr     s0, [sp, #140]
+    0.00 :   2bcbc:       fmul    s0, s2, s0
+    0.00 :   2bcc0:       fsub    s0, s1, s0
+    0.00 :   2bcc4:       str     s0, [sp, #308]
+    0.00 :   2bcc8:       b       2bcdc <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x928>
+    0.00 :   2bccc:       ldr     s1, [sp, #268]
+    0.00 :   2bcd0:       ldr     s0, [sp, #156]
+    0.00 :   2bcd4:       fsub    s0, s1, s0
+    0.00 :   2bcd8:       str     s0, [sp, #308]
+    0.00 :   2bcdc:       ldr     s0, [sp, #136]
+    0.00 :   2bce0:       mov     w0, #0x999a                     // #39322
+    0.00 :   2bce4:       movk    w0, #0x3e99, lsl #16
+    0.00 :   2bce8:       fmov    s1, w0
+    0.00 :   2bcec:       fmul    s1, s0, s1
+    0.00 :   2bcf0:       ldr     s0, [sp, #220]
+    0.00 :   2bcf4:       fmul    s1, s1, s0
+    0.00 :   2bcf8:       ldr     s0, [sp, #224]
+    0.03 :   2bcfc:       fmul    s1, s1, s0
+    0.00 :   2bd00:       ldr     x0, [sp, #104]
+    0.00 :   2bd04:       ldr     s0, [x0, #348]
+    0.01 :   2bd08:       fmul    s1, s1, s0
+    0.00 :   2bd0c:       ldr     s0, [sp, #116]
+    0.01 :   2bd10:       fmul    s0, s1, s0
+    0.00 :   2bd14:       fmov    s2, s0
+    0.00 :   2bd18:       ldr     s0, [sp, #308]
+    0.00 :   2bd1c:       mov     w0, #0xfdb                      // #4059
+    0.00 :   2bd20:       movk    w0, #0x4149, lsl #16
+    0.00 :   2bd24:       fmov    s1, w0
+    0.00 :   2bd28:       fmul    s1, s0, s1
+    0.00 :   2bd2c:       ldr     s0, [sp, #308]
+    0.02 :   2bd30:       fmul    s0, s1, s0
+    0.00 :   2bd34:       fdiv    s0, s2, s0
+    0.00 :   2bd38:       str     s0, [sp, #232]
+    0.00 :   2bd3c:       ldr     x0, [sp, #88]
+    0.00 :   2bd40:       ldr     x0, [x0]
+    0.00 :   2bd44:       ldr     s1, [x0, #344]
+    0.00 :   2bd48:       ldr     s2, [sp, #148]
+    0.00 :   2bd4c:       ldr     s0, [sp, #232]
+    0.02 :   2bd50:       fadd    s0, s2, s0
+    0.00 :   2bd54:       fmov    s2, s0
+    0.00 :   2bd58:       adrp    x0, 15b000 <__do_global_dtors_aux_fini_array_entry>
+    0.00 :   2bd5c:       ldr     x0, [x0, #3680]
+    0.00 :   2bd60:       ldr     s0, [x0]
+    0.01 :   2bd64:       fmul    s2, s2, s0
+    0.00 :   2bd68:       ldr     s0, [sp, #116]
+    0.01 :   2bd6c:       fmul    s0, s2, s0
+    0.00 :   2bd70:       ldr     x0, [sp, #88]
+    0.00 :   2bd74:       ldr     x0, [x0]
+    0.01 :   2bd78:       fadd    s0, s1, s0
+    0.00 :   2bd7c:       str     s0, [x0, #344]
+    0.00 :   2bd80:       adrp    x0, 15b000 <__do_global_dtors_aux_fini_array_entry>
+    0.00 :   2bd84:       ldr     x0, [x0, #3680]
+    0.00 :   2bd88:       ldr     s1, [x0]
+    0.00 :   2bd8c:       ldr     s0, [sp, #148]
+    0.00 :   2bd90:       fmul    s1, s1, s0
+    0.00 :   2bd94:       ldr     s0, [sp, #116]
+    0.00 :   2bd98:       fmul    s0, s1, s0
+    0.00 :   2bd9c:       ldr     s1, [sp, #296]
+    0.00 :   2bda0:       fadd    s0, s1, s0
+    0.00 :   2bda4:       str     s0, [sp, #296]
+    0.00 :   2bda8:       adrp    x0, 15b000 <__do_global_dtors_aux_fini_array_entry>
+    0.00 :   2bdac:       ldr     x0, [x0, #3680]
+    0.00 :   2bdb0:       ldr     s1, [x0]
+    0.00 :   2bdb4:       ldr     s0, [sp, #232]
+    0.00 :   2bdb8:       fmul    s1, s1, s0
+    0.00 :   2bdbc:       ldr     s0, [sp, #116]
+    0.00 :   2bdc0:       fmul    s0, s1, s0
+    0.00 :   2bdc4:       ldr     s1, [sp, #292]
+    0.00 :   2bdc8:       fadd    s0, s1, s0
+    0.00 :   2bdcc:       str     s0, [sp, #292]
+ elmfire_spread_rate.f90:427    1.20 :   2bdd0:       ldr     x0, [sp, #104]
+    0.01 :   2bdd4:       ldr     x0, [x0]
+    0.00 :   2bdd8:       str     x0, [sp, #104]
+    0.00 :   2bddc:       b       2bde4 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xa30>
+    0.00 :   2bde0:       nop
+ elmfire_spread_rate.f90:347   29.82 :   2bde4:       ldr     w0, [sp, #312]
+    0.00 :   2bde8:       cmp     w0, w19
+    0.24 :   2bdec:       b.eq    2be04 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xa50>  // b.none
+    0.00 :   2bdf0:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2bdf4:       add     x1, x0, #0xcb8
+    0.00 :   2bdf8:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2bdfc:       add     x0, x0, #0xc38
+    0.00 :   2be00:       bl      6350 <_gfortran_runtime_error_at@plt>
+    0.01 :   2be04:       ldr     w0, [sp, #312]
+    0.00 :   2be08:       add     w0, w0, #0x1
+    0.00 :   2be0c:       str     w0, [sp, #312]
+    0.00 :   2be10:       ldr     w19, [sp, #312]
+    0.00 :   2be14:       b       2b8e4 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x530>
+    0.00 :   2be18:       nop
+    0.00 :   2be1c:       ldr     s0, [sp, #116]
+    0.00 :   2be20:       ldr     s1, [sp, #296]
+    0.01 :   2be24:       fdiv    s0, s1, s0
+    0.00 :   2be28:       str     s0, [sp, #144]
+    0.00 :   2be2c:       ldr     s0, [sp, #116]
+    0.00 :   2be30:       ldr     s1, [sp, #292]
+    0.00 :   2be34:       fdiv    s0, s1, s0
+    0.00 :   2be38:       str     s0, [sp, #228]
+    0.00 :   2be3c:       ldr     s0, [sp, #144]
+    0.00 :   2be40:       mov     w0, #0xd70a                     // #55050
+    0.00 :   2be44:       movk    w0, #0x3c23, lsl #16
+    0.00 :   2be48:       fmov    s1, w0
+    0.00 :   2be4c:       fmul    s0, s0, s1
+    0.00 :   2be50:       fmov    s1, #2.500000000000000000e+00
+    0.00 :   2be54:       fsub    s0, s1, s0
+    0.00 :   2be58:       bl      6440 <expf@plt>
+    0.00 :   2be5c:       fmov    s1, s0
+    0.00 :   2be60:       fmov    s0, #1.000000000000000000e+00
+    0.00 :   2be64:       fadd    s0, s1, s0
+    0.00 :   2be68:       mov     w0, #0x43fa0000                 // #1140457472
+    0.00 :   2be6c:       fmov    s1, w0
+    0.00 :   2be70:       fdiv    s0, s1, s0
+    0.00 :   2be74:       str     s0, [sp, #152]
+    0.00 :   2be78:       ldr     s0, [sp, #144]
+    0.00 :   2be7c:       mov     w0, #0xcccd                     // #52429
+    0.00 :   2be80:       movk    w0, #0x3d4c, lsl #16
+    0.00 :   2be84:       fmov    s1, w0
+    0.00 :   2be88:       fmul    s0, s0, s1
+    0.00 :   2be8c:       fmov    s1, #2.500000000000000000e+00
+    0.00 :   2be90:       fsub    s0, s1, s0
+    0.00 :   2be94:       bl      6440 <expf@plt>
+    0.00 :   2be98:       fmov    s1, s0
+    0.00 :   2be9c:       fmov    s0, #1.000000000000000000e+00
+    0.00 :   2bea0:       fadd    s0, s1, s0
+    0.00 :   2bea4:       mov     w0, #0x42c80000                 // #1120403456
+    0.00 :   2bea8:       fmov    s1, w0
+    0.00 :   2beac:       fdiv    s0, s1, s0
+    0.00 :   2beb0:       str     s0, [sp, #244]
+    0.00 :   2beb4:       ldr     s0, [sp, #296]
+    0.00 :   2beb8:       mov     w0, #0x5000                     // #20480
+    0.00 :   2bebc:       movk    w0, #0x48c3, lsl #16
+    0.00 :   2bec0:       fmov    s1, w0
+    0.00 :   2bec4:       fcmpe   s0, s1
+    0.00 :   2bec8:       b.le    2bedc <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xb28>
+    0.00 :   2becc:       ldr     s1, [sp, #152]
+    0.00 :   2bed0:       ldr     s0, [sp, #116]
+    0.00 :   2bed4:       fmul    s0, s1, s0
+    0.00 :   2bed8:       str     s0, [sp, #296]
+    0.00 :   2bedc:       ldr     s0, [sp, #292]
+    0.00 :   2bee0:       mov     w0, #0xc800                     // #51200
+    0.00 :   2bee4:       movk    w0, #0x47af, lsl #16
+    0.00 :   2bee8:       fmov    s1, w0
+    0.00 :   2beec:       fcmpe   s0, s1
+    0.00 :   2bef0:       b.le    2bf04 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xb50>
+    0.00 :   2bef4:       ldr     s1, [sp, #244]
+    0.00 :   2bef8:       ldr     s0, [sp, #116]
+    0.00 :   2befc:       fmul    s0, s1, s0
+    0.00 :   2bf00:       str     s0, [sp, #292]
+    0.00 :   2bf04:       ldr     x0, [sp, #88]
+    0.00 :   2bf08:       ldr     x0, [x0]
+    0.00 :   2bf0c:       ldr     s0, [sp, #296]
+    0.00 :   2bf10:       str     s0, [x0, #356]
+    0.00 :   2bf14:       ldr     x0, [sp, #88]
+    0.00 :   2bf18:       ldr     x0, [x0]
+    0.00 :   2bf1c:       ldr     s0, [sp, #292]
+    0.00 :   2bf20:       str     s0, [x0, #360]
+    0.00 :   2bf24:       ldr     s1, [sp, #296]
+    0.00 :   2bf28:       ldr     s0, [sp, #292]
+    0.00 :   2bf2c:       fadd    s0, s1, s0
+    0.00 :   2bf30:       fmov    s1, s0
+    0.00 :   2bf34:       ldr     s0, [sp, #116]
+    0.00 :   2bf38:       fdiv    s0, s1, s0
+    0.00 :   2bf3c:       str     s0, [sp, #240]
+    0.00 :   2bf40:       adrp    x0, 15c000 <_GLOBAL_OFFSET_TABLE_+0x3e0>
+    0.00 :   2bf44:       ldr     x0, [x0, #1848]
+    0.00 :   2bf48:       ldr     w0, [x0]
+    0.00 :   2bf4c:       eor     w0, w0, #0x1
+    0.00 :   2bf50:       cmp     w0, #0x0
+    0.00 :   2bf54:       b.eq    2bfd8 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xc24>  // b.none
+    0.00 :   2bf58:       ldr     x0, [sp, #88]
+    0.00 :   2bf5c:       ldr     x0, [x0]
+    0.00 :   2bf60:       ldr     w0, [x0, #328]
+    0.00 :   2bf64:       sxtw    x1, w0
+    0.00 :   2bf68:       cmp     x1, #0x0
+    0.00 :   2bf6c:       b.ge    2bf8c <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xbd8>  // b.tcont
+    0.00 :   2bf70:       mov     x3, #0x0                        // #0
+    0.00 :   2bf74:       mov     x2, x1
+    0.00 :   2bf78:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2bf7c:       add     x1, x0, #0x470
+    0.00 :   2bf80:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2bf84:       add     x0, x0, #0xcd8
+    0.00 :   2bf88:       bl      6350 <_gfortran_runtime_error_at@plt>
+    0.00 :   2bf8c:       cmp     x1, #0x64
+    0.00 :   2bf90:       b.le    2bfb0 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xbfc>
+    0.00 :   2bf94:       mov     x3, #0x64                       // #100
+    0.00 :   2bf98:       mov     x2, x1
+    0.00 :   2bf9c:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2bfa0:       add     x1, x0, #0x510
+    0.00 :   2bfa4:       adrp    x0, 117000 <__elmfire_vars_MOD___def_init_elmfire_vars_Ucb_ellipse+0xae20>
+    0.00 :   2bfa8:       add     x0, x0, #0xcd8
+    0.00 :   2bfac:       bl      6350 <_gfortran_runtime_error_at@plt>
+    0.00 :   2bfb0:       adrp    x0, 15c000 <_GLOBAL_OFFSET_TABLE_+0x3e0>
+    0.00 :   2bfb4:       ldr     x2, [x0, #1576]
+    0.00 :   2bfb8:       mov     x0, x1
+    0.00 :   2bfbc:       lsl     x0, x0, #5
+    0.00 :   2bfc0:       sub     x0, x0, x1
+    0.00 :   2bfc4:       lsl     x0, x0, #2
+    0.00 :   2bfc8:       add     x0, x2, x0
+    0.00 :   2bfcc:       ldr     s0, [x0, #104]
+    0.00 :   2bfd0:       str     s0, [sp, #316]
+    0.00 :   2bfd4:       b       2c02c <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xc78>
+    0.00 :   2bfd8:       ldr     s1, [sp, #296]
+    0.00 :   2bfdc:       ldr     s0, [sp, #292]
+    0.00 :   2bfe0:       fadd    s0, s1, s0
+    0.00 :   2bfe4:       fmov    s1, s0
+    0.00 :   2bfe8:       mov     w0, #0x6000                     // #24576
+    0.00 :   2bfec:       movk    w0, #0x46ea, lsl #16
+    0.00 :   2bff0:       fmov    s0, w0
+    0.00 :   2bff4:       fcmpe   s1, s0
+    0.00 :   2bff8:       b.le    2c010 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xc5c>
+    0.00 :   2bffc:       mov     w0, #0x8000                     // #32768
+    0.00 :   2c000:       movk    w0, #0x453b, lsl #16
+    0.00 :   2c004:       fmov    s0, w0
+    0.00 :   2c008:       str     s0, [sp, #316]
+    0.00 :   2c00c:       b       2c02c <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xc78>
+    0.00 :   2c010:       ldr     s0, [sp, #240]
+    0.00 :   2c014:       fmul    s0, s0, s0
+    0.00 :   2c018:       mov     w0, #0x1b00                     // #6912
+    0.00 :   2c01c:       movk    w0, #0x4a37, lsl #16
+    0.00 :   2c020:       fmov    s1, w0
+    0.00 :   2c024:       fdiv    s0, s1, s0
+    0.00 :   2c028:       str     s0, [sp, #316]
+    0.00 :   2c02c:       ldr     x0, [sp, #88]
+    0.00 :   2c030:       ldr     x0, [x0]
+    0.00 :   2c034:       ldr     s0, [x0, #224]
+    0.00 :   2c038:       mov     w0, #0x420c0000                 // #1108082688
+    0.00 :   2c03c:       fmov    s1, w0
+    0.00 :   2c040:       fcmpe   s0, s1
+    0.00 :   2c044:       b.hi    2c05c <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xca8>  // b.pmore
+    0.00 :   2c048:       mov     w0, #0x6666                     // #26214
+    0.00 :   2c04c:       movk    w0, #0x3fe6, lsl #16
+    0.00 :   2c050:       fmov    s0, w0
+    0.00 :   2c054:       str     s0, [sp, #288]
+    0.00 :   2c058:       b       2c064 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xcb0>
+    0.00 :   2c05c:       fmov    s0, #1.000000000000000000e+00
+    0.00 :   2c060:       str     s0, [sp, #288]
+    0.00 :   2c064:       ldr     s1, [sp, #296]
+    0.00 :   2c068:       ldr     s0, [sp, #292]
+    0.00 :   2c06c:       fadd    s0, s1, s0
+    0.00 :   2c070:       fmov    s1, s0
+    0.00 :   2c074:       mov     w0, #0x42700000                 // #1114636288
+    0.00 :   2c078:       fmov    s0, w0
+    0.00 :   2c07c:       fmul    s0, s1, s0
+    0.00 :   2c080:       adrp    x0, 15b000 <__do_global_dtors_aux_fini_array_entry>
+    0.00 :   2c084:       ldr     x0, [x0, #3680]
+    0.00 :   2c088:       ldr     s1, [x0]
+    0.00 :   2c08c:       mov     w0, #0xebf                      // #3775
+    0.00 :   2c090:       movk    w0, #0x3e9c, lsl #16
+    0.00 :   2c094:       fmov    s2, w0
+    0.00 :   2c098:       fmul    s2, s1, s2
+    0.00 :   2c09c:       adrp    x0, 15b000 <__do_global_dtors_aux_fini_array_entry>
+    0.00 :   2c0a0:       ldr     x0, [x0, #3664]
+    0.00 :   2c0a4:       ldr     s1, [x0]
+    0.00 :   2c0a8:       fmul    s2, s2, s1
+    0.00 :   2c0ac:       ldr     s1, [sp, #316]
+    0.00 :   2c0b0:       fmul    s1, s2, s1
+    0.00 :   2c0b4:       fdiv    s1, s0, s1
+    0.00 :   2c0b8:       ldr     x0, [sp, #88]
+    0.00 :   2c0bc:       ldr     x0, [x0]
+    0.00 :   2c0c0:       ldr     s0, [sp, #288]
+    0.00 :   2c0c4:       fdiv    s0, s1, s0
+    0.00 :   2c0c8:       str     s0, [x0, #352]
+    0.00 :   2c0cc:       ldr     w0, [sp, #304]
+    0.00 :   2c0d0:       cmp     w0, #0x0
+    0.00 :   2c0d4:       b.ge    2c0ec <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xd38>  // b.tcont
+    0.00 :   2c0d8:       ldr     x0, [sp, #88]
+    0.00 :   2c0dc:       ldr     x0, [x0]
+    0.00 :   2c0e0:       mov     w1, #0xffffffff                 // #-1
+    0.00 :   2c0e4:       str     w1, [x0, #332]
+    0.00 :   2c0e8:       b       2c0fc <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xd48>
+    0.00 :   2c0ec:       ldr     x0, [sp, #88]
+    0.00 :   2c0f0:       ldr     x0, [x0]
+    0.00 :   2c0f4:       mov     w1, #0x1                        // #1
+    0.00 :   2c0f8:       str     w1, [x0, #332]
+    0.00 :   2c0fc:       ldr     w0, [sp, #300]
+    0.00 :   2c100:       cmp     w0, #0x0
+    0.00 :   2c104:       b.ge    2c11c <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xd68>  // b.tcont
+    0.00 :   2c108:       ldr     x0, [sp, #88]
+    0.00 :   2c10c:       ldr     x0, [x0]
+    0.00 :   2c110:       mov     w1, #0xffffffff                 // #-1
+    0.00 :   2c114:       str     w1, [x0, #336]
+    0.00 :   2c118:       b       2c12c <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xd78>
+    0.00 :   2c11c:       ldr     x0, [sp, #88]
+    0.00 :   2c120:       ldr     x0, [x0]
+    0.00 :   2c124:       mov     w1, #0x1                        // #1
+    0.00 :   2c128:       str     w1, [x0, #336]
+    0.00 :   2c12c:       ldr     x0, [sp, #88]
+    0.00 :   2c130:       bl      2a644 <__elmfire_spread_rate_MOD_ellipse_ucb>
+    0.00 :   2c134:       ldr     x0, [sp, #88]
+    0.00 :   2c138:       ldr     x0, [x0]
+    0.00 :   2c13c:       ldr     s0, [x0, #40]
+    0.00 :   2c140:       mov     w0, #0xfdb                      // #4059
+    0.00 :   2c144:       movk    w0, #0x4049, lsl #16
+    0.00 :   2c148:       fmov    s1, w0
+    0.00 :   2c14c:       fmul    s1, s0, s1
+    0.00 :   2c150:       ldr     x0, [sp, #88]
+    0.00 :   2c154:       ldr     x0, [x0]
+    0.00 :   2c158:       ldr     s0, [x0, #36]
+    0.00 :   2c15c:       fmul    s0, s1, s0
+    0.00 :   2c160:       str     s0, [sp, #260]
+    0.00 :   2c164:       ldr     x0, [sp, #88]
+    0.00 :   2c168:       ldr     x0, [x0]
+    0.00 :   2c16c:       ldr     s1, [x0, #40]
+    0.00 :   2c170:       ldr     x0, [sp, #88]
+    0.00 :   2c174:       ldr     x0, [x0]
+    0.00 :   2c178:       ldr     s0, [x0, #44]
+    0.00 :   2c17c:       fadd    s0, s1, s0
+    0.00 :   2c180:       str     s0, [sp, #168]
+    0.00 :   2c184:       ldr     x0, [sp, #88]
+    0.00 :   2c188:       ldr     x0, [x0]
+    0.00 :   2c18c:       ldr     s0, [x0, #36]
+    0.00 :   2c190:       fadd    s0, s0, s0
+    0.00 :   2c194:       str     s0, [sp, #172]
+    0.00 :   2c198:       ldr     x0, [sp, #88]
+    0.00 :   2c19c:       ldr     x0, [x0]
+    0.00 :   2c1a0:       ldr     s1, [x0, #40]
+    0.00 :   2c1a4:       ldr     x0, [sp, #88]
+    0.00 :   2c1a8:       ldr     x0, [x0]
+    0.00 :   2c1ac:       ldr     s0, [x0, #44]
+    0.00 :   2c1b0:       fsub    s0, s1, s0
+    0.00 :   2c1b4:       str     s0, [sp, #164]
+    0.00 :   2c1b8:       ldr     x0, [sp, #88]
+    0.00 :   2c1bc:       ldr     x0, [x0]
+    0.00 :   2c1c0:       ldr     s1, [x0, #352]
+    0.00 :   2c1c4:       ldr     s0, [sp, #168]
+    0.00 :   2c1c8:       fmul    s1, s1, s0
+    0.00 :   2c1cc:       adrp    x0, 15b000 <__do_global_dtors_aux_fini_array_entry>
+    0.00 :   2c1d0:       ldr     x0, [x0, #3664]
+    0.00 :   2c1d4:       ldr     s0, [x0]
+    0.00 :   2c1d8:       fmul    s1, s1, s0
+    0.00 :   2c1dc:       ldr     s0, [sp, #260]
+    0.00 :   2c1e0:       ldr     x0, [sp, #88]
+    0.00 :   2c1e4:       ldr     x0, [x0]
+    0.00 :   2c1e8:       fdiv    s0, s1, s0
+    0.00 :   2c1ec:       str     s0, [x0, #204]
+    0.00 :   2c1f0:       ldr     x0, [sp, #88]
+    0.00 :   2c1f4:       ldr     x0, [x0]
+    0.00 :   2c1f8:       ldr     s1, [x0, #352]
+    0.00 :   2c1fc:       ldr     s0, [sp, #164]
+    0.00 :   2c200:       fmul    s1, s1, s0
+    0.00 :   2c204:       adrp    x0, 15b000 <__do_global_dtors_aux_fini_array_entry>
+    0.00 :   2c208:       ldr     x0, [x0, #3664]
+    0.00 :   2c20c:       ldr     s0, [x0]
+    0.00 :   2c210:       fmul    s1, s1, s0
+    0.00 :   2c214:       ldr     s0, [sp, #260]
+    0.00 :   2c218:       ldr     x0, [sp, #88]
+    0.00 :   2c21c:       ldr     x0, [x0]
+    0.00 :   2c220:       fdiv    s0, s1, s0
+    0.00 :   2c224:       str     s0, [x0, #276]
+    0.00 :   2c228:       ldr     x0, [sp, #88]
+    0.00 :   2c22c:       ldr     x0, [x0]
+    0.00 :   2c230:       ldr     s1, [x0, #352]
+    0.00 :   2c234:       ldr     s0, [sp, #172]
+    0.00 :   2c238:       fmul    s1, s1, s0
+    0.00 :   2c23c:       adrp    x0, 15b000 <__do_global_dtors_aux_fini_array_entry>
+    0.00 :   2c240:       ldr     x0, [x0, #3664]
+    0.00 :   2c244:       ldr     s0, [x0]
+    0.00 :   2c248:       fmul    s1, s1, s0
+    0.00 :   2c24c:       ldr     s0, [sp, #260]
+    0.00 :   2c250:       fdiv    s0, s1, s0
+    0.00 :   2c254:       str     s0, [sp, #280]
+    0.00 :   2c258:       ldr     s0, [sp, #280]
+    0.00 :   2c25c:       mov     w0, #0xb717                     // #46871
+    0.00 :   2c260:       movk    w0, #0x38d1, lsl #16
+    0.00 :   2c264:       fmov    s1, w0
+    0.00 :   2c268:       fcmpe   s0, s1
+    0.00 :   2c26c:       b.le    2c2b8 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xf04>
+    0.00 :   2c270:       ldr     x0, [sp, #88]
+    0.00 :   2c274:       ldr     x0, [x0]
+    0.00 :   2c278:       ldr     s1, [x0, #204]
+    0.00 :   2c27c:       ldr     x0, [sp, #88]
+    0.00 :   2c280:       ldr     x0, [x0]
+    0.00 :   2c284:       ldr     s0, [x0, #276]
+    0.00 :   2c288:       fadd    s0, s1, s0
+    0.00 :   2c28c:       fmov    s1, s0
+    0.00 :   2c290:       fmov    s0, #2.000000000000000000e+00
+    0.00 :   2c294:       fdiv    s1, s1, s0
+    0.00 :   2c298:       ldr     s0, [sp, #280]
+    0.00 :   2c29c:       fdiv    s1, s1, s0
+    0.00 :   2c2a0:       fmov    s0, #1.000000000000000000e+01
+    0.00 :   2c2a4:       fminnm  s0, s1, s0
+    0.00 :   2c2a8:       ldr     x0, [sp, #88]
+    0.00 :   2c2ac:       ldr     x0, [x0]
+    0.00 :   2c2b0:       str     s0, [x0, #280]
+    0.00 :   2c2b4:       b       2c2c8 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0xf14>
+    0.00 :   2c2b8:       ldr     x0, [sp, #88]
+    0.00 :   2c2bc:       ldr     x0, [x0]
+    0.00 :   2c2c0:       fmov    s0, #1.000000000000000000e+00
+    0.00 :   2c2c4:       str     s0, [x0, #280]
+    0.00 :   2c2c8:       ldr     x0, [sp, #88]
+    0.00 :   2c2cc:       ldr     x0, [x0]
+    0.00 :   2c2d0:       str     wzr, [x0, #344]
+    0.00 :   2c2d4:       adrp    x0, 18bb000 <__elmfire_vars_MOD_ws_filename+0x88>
+    0.00 :   2c2d8:       add     x0, x0, #0xc90
+    0.00 :   2c2dc:       str     wzr, [x0]
+    0.00 :   2c2e0:       ldp     x19, x20, [sp, #16]
+    0.00 :   2c2e4:       ldp     d8, d9, [sp, #32]
+    0.00 :   2c2e8:       ldr     d10, [sp, #48]
+    0.00 :   2c2ec:       ldp     x29, x30, [sp], #320
+    0.00 :   2c2f0:       ret

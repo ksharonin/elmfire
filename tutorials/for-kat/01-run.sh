@@ -35,15 +35,24 @@ ELMFIRE_HOSTS=`printf "$(hostname),%.0s" {1..64}`
 # gdb --args $ELMFIRE_DEBUG elmfire.data 
 
 # REGULAR
-# $ELMFIRE elmfire.data
+$ELMFIRE elmfire.data
 
 # GNU PROFILING
-$ELMFIRE_DEBUG elmfire.data 
-gprof $ELMFIRE_DEBUG gmon.out > /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/analysis.txt
+# $ELMFIRE_DEBUG elmfire.data 
+# gprof $ELMFIRE_DEBUG gmon.out > /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/analysis.txt
 
 # PERF PROFILE
+# sudo sysctl -w kernel.perf_event_paranoid=-1
+
 # perf record -o /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf.data -g $ELMFIRE_DEBUG elmfire.data 
 # perf report -n -i /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf.data > /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf_analysis.txt
+# perf annotate -l -s __elmfire_spread_rate_MOD_umd_ucb_bldg_spread -i /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf.data > /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/umd_ucb_target_analysis.txt
+# perf report -i /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf.data > /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf_report.txt
+
+# HINTS
+# addr2line -e /home/katrinasharonin/Downloads/elmfire/build/linux/bin/elmfire_debug_2024.0916 0x2b3b4
+# To show func name + file + line
+# addr2line -fe /home/katrinasharonin/Downloads/elmfire/build/linux/bin/elmfire_debug_2024.0916 0x2b968
 
 # mpi runs
 #-host $ELMFIRE_HOSTS
