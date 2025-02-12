@@ -32,10 +32,15 @@ ELMFIRE_HOSTS=`printf "$(hostname),%.0s" {1..64}`
 
 # GDB DEBUGGING
 # dir /home/katrinasharonin/Downloads/elmfire/build/source
-# gdb --args $ELMFIRE_DEBUG elmfire.data 
+gdb --args $ELMFIRE_DEBUG elmfire.data 
 
 # REGULAR
-$ELMFIRE elmfire.data
+# $ELMFIRE elmfire.data
+
+# MEMORY PROFILING
+# valgrind --tool=cachegrind --cachegrind-out-file=/home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/cache_analysis2.out $ELMFIRE_DEBUG elmfire.data
+# cg_annotate /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/cache_analysis2.out > /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/cache_analysis2.txt
+
 
 # GNU PROFILING
 # $ELMFIRE_DEBUG elmfire.data 
@@ -47,12 +52,15 @@ $ELMFIRE elmfire.data
 # perf record -o /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf.data -g $ELMFIRE_DEBUG elmfire.data 
 # perf report -n -i /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf.data > /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf_analysis.txt
 # perf annotate -l -s __elmfire_spread_rate_MOD_umd_ucb_bldg_spread -i /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf.data > /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/umd_ucb_target_analysis.txt
+
 # perf report -i /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf.data > /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf_report.txt
 
 # HINTS
 # addr2line -e /home/katrinasharonin/Downloads/elmfire/build/linux/bin/elmfire_debug_2024.0916 0x2b3b4
 # To show func name + file + line
 # addr2line -fe /home/katrinasharonin/Downloads/elmfire/build/linux/bin/elmfire_debug_2024.0916 0x2b968
+# print at sp offset in gdb
+# x/40w $sp+180 
 
 # mpi runs
 #-host $ELMFIRE_HOSTS

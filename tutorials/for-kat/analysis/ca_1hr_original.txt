@@ -1,0 +1,61 @@
+--------------------------------------------------------------------------------
+I1 cache:         16384 B, 64 B, 4-way associative
+D1 cache:         16384 B, 64 B, 4-way associative
+LL cache:         262144 B, 64 B, 8-way associative
+Command:          /home/katrinasharonin/Downloads/elmfire/build/linux/bin/elmfire_debug_2024.0916 elmfire.data
+Data file:        /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/cache_analysis2.out
+Events recorded:  Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Events shown:     Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Event sort order: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Thresholds:       0.1 100 100 100 100 100 100 100 100
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir             I1mr      ILmr      Dr            D1mr        DLmr        Dw            D1mw       DLmw       
+--------------------------------------------------------------------------------
+19,463,328,787 5,734,211 1,663,726 7,183,599,368 432,247,542 218,155,599 1,184,429,253 14,363,159 12,467,002  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir            I1mr    ILmr    Dr            D1mr        DLmr        Dw          D1mw      DLmw       file:function
+--------------------------------------------------------------------------------
+8,855,501,711 664,269 115,180 3,653,082,072 341,669,738 144,412,168 415,176,417   163,343    56,270  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_spread_rate.f90:__elmfire_spread_rate_MOD_umd_ucb_bldg_spread
+2,016,984,147  82,814  75,090   670,637,771  12,529,177  10,599,781  73,307,444 2,702,172 2,659,579  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_level_set.f90:__elmfire_level_set_MOD_limit_gradients
+1,258,176,413 638,115 286,617   464,483,848  19,316,311  17,678,169  95,015,789   241,920    62,600  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_level_set.f90:__elmfire_level_set_MOD_ux_and_uy_elliptical
+  885,096,671  25,233  23,079   366,487,758   8,305,009   6,877,370  34,826,416 5,497,724 5,472,050  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_level_set.f90:__elmfire_level_set_MOD_calc_normal_vectors
+  776,560,272   6,253   3,099   258,853,286   1,495,583     224,108 155,312,748   427,249    62,745  /build/glibc-FcXrgv/glibc-2.31/gmon/../gmon/mcount.c:_mcount@@GLIBC_2.18
+  661,532,592  19,029  17,275   309,683,460  16,899,262  16,392,367  11,001,360   674,194   330,846  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_level_set.f90:__elmfire_level_set_MOD_rk2_integrate
+  582,503,658 296,318  48,821   187,942,571     977,101     127,334  80,092,283    18,351     6,642  ???:???
+  571,626,783   1,553   1,407   117,256,776           0           0  87,942,582         0         0  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_level_set.f90:__elmfire_level_set_MOD_half_superbee
+  421,525,202   6,063   6,054   160,951,180   1,768,174   1,235,769  15,261,071         9         2  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_level_set.f90:__elmfire_level_set_MOD_untag_cells
+  396,762,162 315,582 181,247   142,512,945   8,220,154   7,255,547  19,529,571   431,644   402,815  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_level_set.f90:__elmfire_level_set_MOD_level_set_propagation
+  365,685,474 462,397 173,774   121,406,318   4,587,338   3,256,014  29,959,106   869,716   764,872  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_spread_rate.f90:__elmfire_spread_rate_MOD_ellipse_ucb
+  313,454,455     973     973    86,582,482     403,934     403,859   9,143,607   305,184   305,182  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_io.f90:__elmfire_io_MOD_read_weather_fuel_topography
+  237,492,751      66      66   113,935,984     198,146      98,630   5,488,789    72,050    39,379  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_init.f90:__elmfire_init_MOD_calc_wind_adjustment_factor_everywhere
+  228,940,321      63      63    94,389,779      59,131      59,097   3,808,788    49,222    49,222  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_init.f90:__elmfire_init_MOD_init_rasters
+  199,860,856 192,979  41,404    63,451,231   3,076,736   1,451,992  24,606,319    64,646    20,032  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_spread_rate.f90:__elmfire_spread_rate_MOD_hrr_transient
+  189,841,904   2,019     834    34,516,788     755,315      34,787  17,258,818         0         0  ???:__aarch64_cas8_acq
+  147,771,308   5,820   4,536    32,032,508     454,022     392,771  10,304,850   464,327   462,943  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_io.f90:__elmfire_io_MOD_read_bsq_raster
+  147,178,556  16,285     643    35,543,952     161,651     157,174   7,614,896     3,533       167  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_io.f90:__elmfire_io_MOD_write_bil_raster
+  143,860,724 327,561 116,273    24,423,300     371,040     107,345           0         0         0  /build/glibc-FcXrgv/glibc-2.31/math/../sysdeps/ieee754/flt-32/e_powf.c:powf@@GLIBC_2.27
+   89,838,704 424,945 209,389     1,832,636     279,632      56,505           0         0         0  /build/glibc-FcXrgv/glibc-2.31/math/../sysdeps/ieee754/flt-32/s_atanf.c:atanf
+   81,506,940  11,315   2,455    17,718,900     414,128     155,432           0         0         0  /build/glibc-FcXrgv/glibc-2.31/math/../sysdeps/ieee754/flt-32/e_expf.c:expf@@GLIBC_2.27
+   71,286,711 272,864  17,915    13,627,037     359,406     313,108   5,369,920    45,673    42,077  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_spread_rate.f90:__elmfire_spread_rate_MOD_surface_spread_rate
+   70,020,979   3,454   3,186    28,590,301   5,177,730   5,117,417   8,207,158       381       349  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_level_set.f90:__elmfire_level_set_MOD_calc_cfl
+   68,114,799     947     165    19,885,111       1,066         908   2,533,550   567,992   567,927  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_init.f90:__elmfire_init_MOD_read_fuel_model_table
+   58,367,597   4,786   4,768     3,630,315           0           0   3,630,315         0         0  /build/glibc-FcXrgv/glibc-2.31/math/../sysdeps/ieee754/flt-32/e_atan2f.c:__atan2f_finite@GLIBC_2.17
+   56,381,634  49,155   3,239    20,641,236     933,852     630,313  20,641,236   836,759   560,806  /build/glibc-FcXrgv/glibc-2.31/string/../sysdeps/aarch64/multiarch/../memcpy.S:__GI_memcpy
+   52,938,805   9,177      69    15,125,420           0           0  12,604,513         0         0  ???:_gfortran_transfer_real
+   42,900,747 135,322  16,550    10,449,205      17,096       6,848   2,667,241     1,341       956  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_spotting.f90:__elmfire_spotting_MOD_ember_trajectory
+   41,159,290   2,413     867     1,365,631           0           0           0         0         0  /build/glibc-FcXrgv/glibc-2.31/math/../sysdeps/ieee754/flt-32/s_cosf.c:cosf
+   29,021,694     154     154     5,047,836          23          21   2,520,216   118,118   118,092  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_subs.f90:__elmfire_subs_MOD_allocate_empty_raster
+   28,653,162     727     407    11,532,593     568,144      33,695           0         0         0  /build/glibc-FcXrgv/glibc-2.31/math/../sysdeps/ieee754/flt-32/sincosf_poly.h:cosf
+   23,431,086     360     355     5,206,908           0           0   5,206,908   258,758    37,316  /build/glibc-FcXrgv/glibc-2.31/math/w_atan2f_compat.c:atan2f
+   23,204,466     223     221     2,039,006      16,611      16,605   1,907,626   122,345   117,629  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_io.f90:__elmfire_io_MOD_main_dump_routine
+   22,872,420   3,753   1,369     7,624,140       9,999       2,199   6,353,450        85         8  ???:_gfortran_random_r4
+   21,923,021 289,156  30,414     8,658,777     351,286     279,323     959,396     1,440     1,208  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_spread_rate.f90:__elmfire_spread_rate_MOD_crown_spread_rate
+   21,761,642  15,329  14,920     8,888,895      90,920      63,411     295,926     5,100     1,375  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_level_set.f90:__elmfire_level_set_MOD_tag_band
+   21,032,451   4,151   1,365             0           0           0           0         0         0  /build/glibc-FcXrgv/glibc-2.31/math/../sysdeps/ieee754/flt-32/s_sinf.c:sinf
+   20,252,985 484,010  32,147     7,762,704     244,169      43,156   2,391,996    27,660    24,851  /home/katrinasharonin/Downloads/elmfire/build/linux/elmfire/../../source/elmfire_subs.f90:__elmfire_subs_MOD_interp_raster_linkedlist_single
+

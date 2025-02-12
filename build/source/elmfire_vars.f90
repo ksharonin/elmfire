@@ -473,14 +473,15 @@ END TYPE UCB_ELLIPSE
 
 ! Doubly linked list variables
 TYPE NODE
+   INTEGER   :: IX         = -1
+   INTEGER   :: IY         = -1
+
    TYPE(NODE), POINTER :: NEXT => NULL()
    TYPE(NODE), POINTER :: PREV => NULL()
    TYPE(UCB_ELLIPSE) :: ELLIPSE_PARAMETERS
 
    INTEGER   :: BLDG_FUEL_MODEL = 0
    INTEGER*1 :: CROWN_FIRE =  0
-   INTEGER   :: IX         = -1
-   INTEGER   :: IY         = -1
 
    LOGICAL :: BURNED            = .FALSE.
    LOGICAL :: JUST_TAGGED       = .TRUE.
