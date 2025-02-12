@@ -473,15 +473,14 @@ END TYPE UCB_ELLIPSE
 
 ! Doubly linked list variables
 TYPE NODE
-   INTEGER   :: IX         = -1
-   INTEGER   :: IY         = -1
-
    TYPE(NODE), POINTER :: NEXT => NULL()
    TYPE(NODE), POINTER :: PREV => NULL()
    TYPE(UCB_ELLIPSE) :: ELLIPSE_PARAMETERS
 
    INTEGER   :: BLDG_FUEL_MODEL = 0
    INTEGER*1 :: CROWN_FIRE =  0
+   INTEGER   :: IX         = -1
+   INTEGER   :: IY         = -1
 
    LOGICAL :: BURNED            = .FALSE.
    LOGICAL :: JUST_TAGGED       = .TRUE.
@@ -571,12 +570,20 @@ TYPE NODE
    REAL    :: T_END_SPOTTING   = -1. 
 
 END TYPE NODE
+
+
+! Wrapper of pointers DWI_SU
+TYPE :: NODE_WRAPPER
+    TYPE(NODE), POINTER :: PTR  ! Each wrapper holds a pointer to a NODE
+END TYPE NODE_WRAPPER
+
  
 TYPE DLL
   TYPE(NODE), POINTER :: HEAD => NULL()
   TYPE(NODE), POINTER :: TAIL => NULL()
   INTEGER :: NUM_NODES = 0
   INTEGER :: NUM_NODES_PREVIOUS = 0
+  TYPE(NODE_WRAPPER), ALLOCATABLE :: NODE_POINTERS(:)   ! Array of pointers DWI_SU
 END TYPE DLL
 TYPE(DLL), TARGET :: LIST_TAGGED, LIST_BURNED, LIST_SUPPRESSED
 

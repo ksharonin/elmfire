@@ -620,7 +620,7 @@ ENDIF
 ICOUNT = 0
 
 CALL RANDOM_NUMBER(R0); EPS = 8.*(R0 - 0.5)
-
+EPS=0
 DO WHILE (T .LT. TSTOP .AND. DIST .LT. X_MAX )
    ICOUNT = ICOUNT + 1
    T = T + DT
@@ -674,7 +674,6 @@ DO WHILE (T .LT. TSTOP .AND. DIST .LT. X_MAX )
 
    IF (ABS(UWIND(1)) .LT. 1E-6 .AND. ABS(UWIND(2)) .LT. 1E-6) T=9E9
    IF (ICOUNT .GT. 100000) T=9E9
-
    X(1:2)   = X(1:2) + UWIND(1:2) * DT
    DIST     = DIST + WS20 * DT
    
@@ -898,7 +897,7 @@ IF (.NOT. LOCAL_IGNITION(IX, IY)) THEN
       IFBFM = FBFM%I2(IX,IY,1)
               
       ! Ignition critical ember mass density from De Beer' Thesis, 2023
-      M_EMBER = 0.2E-3 ! Estimated ember mass, 0.2 g
+      M_EMBER = 0.2 ! Estimated ember mass, 0.2 g
 
       IF(IFBFM .NE. 91) THEN
          IF (CC%R4(IX,IY, 1) .GT. 1E-4 .AND. CH%R4(IX,IY, 1) .GT. 1E-4) THEN !Canopy is present
@@ -917,7 +916,7 @@ IF (.NOT. LOCAL_IGNITION(IX, IY)) THEN
 
       PSI = NUM_ACCUMULATED_EMBERS_PUA * M_EMBER/1E4 ! Firebrand coverage density (mass load, g/cm2) 
       V_AIR = UWIND*COEF_WIND*0.447
-      IGNITION_CRITERION = PSI*(V_AIR-0.0888)*(V_AIR-3.8912)+0.1945 ! UMD Fitted curve at P_IGN = 0.5
+      IGNITION_CRITERION = PSI*(V_AIR-0.003)*(V_AIR-4.017)+0.188 ! UMD Fitted curve at P_IGN = 0.5
 
       IF(IGNITION_CRITERION .LT. 0)THEN
          P_IGN = 0.90

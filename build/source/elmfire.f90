@@ -740,7 +740,7 @@ IF (MODE .NE. 2) THEN
 
 ! Once we get here, all simulations are done and we have some post-processing to do
 
-   CALL MPI_BARRIER(MPI_COMM_WORLD, IERR)
+   CALL MPI_BARRIER(MPI_COMM_WORLD, IERR)  !DWI_SU HICCUP 1
 
    CALL ACCUMULATE_CPU_USAGE(21, IT1, IT2)
 
