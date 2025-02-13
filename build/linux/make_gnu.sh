@@ -11,9 +11,11 @@ ELMFIRE_VER=2024.0916
 # export ELMFIRE_FCOMPL_MPI_GNU=mpifort
 # export ELMFIRE_INSTALL_DIR=$(pwd)/bin
 
-export ELMFIRE_FCOMPL_SERIAL_GNU=gfortran
-export ELMFIRE_FCOMPL_MPI_GNU=/usr/bin/mpifort
-export ELMFIRE_INSTALL_DIR=/home/dwip/binYiren_SU2
+export ELMFIRE_FCOMPL_SERIAL_GNU=${ELMFIRE_FCOMPL_SERIAL_GNU:-gfortran}
+export ELMFIRE_FCOMPL_MPI_GNU=${ELMFIRE_FCOMPL_MPI_GNU:-mpifort}
+export ELMFIRE_INSTALL_DIR=${ELMFIRE_INSTALL_DIR:-$(pwd)/bin}
+
+mkdir -p "$ELMFIRE_INSTALL_DIR"
 
 # Build main ELMFIRE executables:
 
