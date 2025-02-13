@@ -34,7 +34,10 @@ gnu_mpi_linux : obj = elmfire
 gnu_mpi_linux : setup $(obj_mpi)
 	$(FCOMPL) $(FFLAGS) -o $(obj) $(obj_mpi)
 
-gnu_mpi_debug_linux : FFLAGS = -O0 -pg -g -Wall -fcheck=all -fbounds-check -fbacktrace -fdump-core -ffpe-trap=invalid,zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -finit-real=snan -finit-integer=-99999999
+# copy elmfire args to reflect performance
+gnu_mpi_debug_linux : FFLAGS = -pg -g -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -ffpe-summary=none
+# -O0 -pg -g -Wall -fbacktrace -fdump-core -ffree-line-length-none -cpp 
+# -O0 -pg -g -Wall -fcheck=all -fbounds-check -fbacktrace -fdump-core -ffpe-trap=invalid,zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -finit-integer=-99999999 -finit-real=snan 
 gnu_mpi_debug_linux : FCOMPL = $(ELMFIRE_FCOMPL_MPI_GNU)
 gnu_mpi_debug_linux : obj = elmfire_debug
 gnu_mpi_debug_linux : setup $(obj_mpi)

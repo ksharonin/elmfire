@@ -1,0 +1,444 @@
+
+Sorted summary for file /home/katrinasharonin/Downloads/elmfire/build/linux/bin/elmfire_debug_2024.0916
+----------------------------------------------
+
+   24.60 elmfire_spread_rate.f90:422
+   13.96 elmfire_spread_rate.f90:491
+    8.89 elmfire_spread_rate.f90:417
+    8.68 elmfire_spread_rate.f90:448
+    6.82 elmfire_spread_rate.f90:580
+    6.53 elmfire_spread_rate.f90:472
+    5.92 elmfire_spread_rate.f90:457
+    5.73 elmfire_spread_rate.f90:480
+    5.02 elmfire_spread_rate.f90:582
+    2.77 elmfire_spread_rate.f90:446
+    1.48 elmfire_spread_rate.f90:504
+    1.45 elmfire_spread_rate.f90:468
+    1.04 elmfire_spread_rate.f90:409
+ Percent |	Source code & Disassembly of elmfire_debug_2024.0916 for cpu-clock:pppH (9823 samples, percent: local period)
+-----------------------------------------------------------------------------------------------------------------------------
+         :
+         :
+         :
+         :           Disassembly of section .text:
+         :
+         :           000000000001e570 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread>:
+         :           __elmfire_spread_rate_MOD_umd_ucb_bldg_spread():
+    0.08 :   1e570:       stp     x29, x30, [sp, #-416]!
+    0.01 :   1e574:       mov     x29, sp
+    0.00 :   1e578:       stp     x19, x20, [sp, #16]
+    0.02 :   1e57c:       stp     x21, x22, [sp, #32]
+    0.00 :   1e580:       stp     x23, x24, [sp, #48]
+    0.00 :   1e584:       stp     x25, x26, [sp, #64]
+    0.01 :   1e588:       stp     x27, x28, [sp, #80]
+    0.04 :   1e58c:       stp     d8, d9, [sp, #96]
+    0.04 :   1e590:       stp     d10, d11, [sp, #112]
+    0.00 :   1e594:       stp     d12, d13, [sp, #128]
+    0.00 :   1e598:       xpaclri
+    0.00 :   1e59c:       mov     x22, x3
+    0.00 :   1e5a0:       add     x20, sp, #0xf4
+    0.00 :   1e5a4:       add     x19, sp, #0xf0
+    0.00 :   1e5a8:       mov     x25, x0
+    0.00 :   1e5ac:       mov     x27, x1
+    0.19 :   1e5b0:       mov     x0, x30
+    0.00 :   1e5b4:       adrp    x26, 51000 <__elmfire_vars_MOD___def_init_elmfire_vars_Dll+0x3d00>
+    0.00 :   1e5b8:       bl      6090 <_mcount@plt>
+    0.00 :   1e5bc:       add     x21, x26, #0x570
+    0.00 :   1e5c0:       mov     x0, x21
+    0.00 :   1e5c4:       mov     x2, x20
+    0.00 :   1e5c8:       mov     x1, x19
+    0.00 :   1e5cc:       str     xzr, [sp, #264]
+    0.05 :   1e5d0:       str     xzr, [sp, #328]
+    0.00 :   1e5d4:       bl      1c470 <__elmfire_subs_MOD_accumulate_cpu_usage>
+    0.00 :   1e5d8:       mov     x2, x20
+    0.00 :   1e5dc:       mov     x1, x19
+    0.00 :   1e5e0:       add     x0, x21, #0x4
+    0.00 :   1e5e4:       bl      1c470 <__elmfire_subs_MOD_accumulate_cpu_usage>
+    0.00 :   1e5e8:       ldr     x1, [x25]
+    0.00 :   1e5ec:       adrp    x10, 69000 <_GLOBAL_OFFSET_TABLE_+0x3d8>
+    0.00 :   1e5f0:       fmov    s0, #1.000000000000000000e+00
+    0.00 :   1e5f4:       adrp    x5, 68000 <__elmfire_vars_MOD___vtab_elmfire_vars_Ucb_ellipse+0x28>
+    0.00 :   1e5f8:       ldr     x6, [x10, #1584]
+    0.00 :   1e5fc:       adrp    x3, 69000 <_GLOBAL_OFFSET_TABLE_+0x3d8>
+    0.03 :   1e600:       ldrsw   x2, [x1, #328]
+    0.00 :   1e604:       fmov    s1, #5.000000000000000000e-01
+    0.00 :   1e608:       ldp     w0, w1, [x1, #56]
+    0.00 :   1e60c:       mov     w11, #0x1                       // #1
+    0.00 :   1e610:       lsl     x10, x2, #5
+    0.00 :   1e614:       sub     x10, x10, x2
+    0.00 :   1e618:       adrp    x2, 68000 <__elmfire_vars_MOD___vtab_elmfire_vars_Ucb_ellipse+0x28>
+    0.00 :   1e61c:       ldr     x5, [x5, #3240]
+    0.00 :   1e620:       add     x10, x6, x10, lsl #2
+    0.00 :   1e624:       ldr     x13, [x2, #3672]
+    0.00 :   1e628:       sub     w4, w0, #0x5
+    0.04 :   1e62c:       ldr     s2, [x10, #116]
+    0.00 :   1e630:       sub     w2, w1, #0x5
+    0.00 :   1e634:       ldr     x3, [x3, #2784]
+    0.00 :   1e638:       cmp     w4, #0x0
+    0.08 :   1e63c:       ldr     s12, [x13]
+    0.00 :   1e640:       fsub    s2, s0, s2
+    0.00 :   1e644:       ldr     w9, [x5]
+    0.00 :   1e648:       csel    w12, w4, w11, gt
+    0.05 :   1e64c:       ldr     w8, [x3]
+    0.00 :   1e650:       add     w0, w0, #0x5
+    0.00 :   1e654:       fdiv    s0, s0, s12
+    0.00 :   1e658:       cmp     w2, #0x0
+    0.00 :   1e65c:       csel    w11, w2, w11, gt
+    0.00 :   1e660:       add     w1, w1, #0x5
+    0.00 :   1e664:       cmp     w0, w9
+    0.03 :   1e668:       fmul    s11, s12, s12
+    0.00 :   1e66c:       csel    w9, w0, w9, le
+    0.00 :   1e670:       cmp     w1, w8
+    0.00 :   1e674:       csel    w8, w1, w8, le
+    0.00 :   1e678:       add     x3, sp, #0xfc
+    0.00 :   1e67c:       add     x5, sp, #0xf8
+    0.00 :   1e680:       add     x6, sp, #0x100
+    0.08 :   1e684:       add     x4, sp, #0x104
+    0.00 :   1e688:       mov     x0, x22
+    0.00 :   1e68c:       add     x2, sp, #0x108
+    0.00 :   1e690:       add     x1, sp, #0x148
+    0.00 :   1e694:       stp     w9, w12, [sp, #248]
+    0.00 :   1e698:       str     w8, [sp, #256]
+    0.00 :   1e69c:       str     w11, [sp, #260]
+    0.00 :   1e6a0:       stp     s2, s0, [sp, #172]
+    0.00 :   1e6a4:       fmul    s0, s12, s1
+    0.03 :   1e6a8:       str     s0, [sp, #180]
+    0.00 :   1e6ac:       ldr     s0, [x10, #108]
+    0.15 :   1e6b0:       str     s0, [sp, #204]
+    0.00 :   1e6b4:       bl      1d988 <__elmfire_spread_rate_MOD_burned_filter>
+ elmfire_spread_rate.f90:409    1.04 :   1e6b8:       mov     x1, x19
+    0.00 :   1e6bc:       add     x0, x21, #0x8
+    0.00 :   1e6c0:       mov     x2, x20
+    0.00 :   1e6c4:       bl      1c470 <__elmfire_subs_MOD_accumulate_cpu_usage>
+    0.09 :   1e6c8:       ldp     x1, x0, [sp, #312]
+    0.00 :   1e6cc:       sub     x0, x0, x1
+    0.00 :   1e6d0:       adds    x0, x0, #0x1
+    0.00 :   1e6d4:       csel    x0, x0, xzr, pl  // pl = nfrst
+    0.00 :   1e6d8:       cmp     w0, #0x0
+    0.00 :   1e6dc:       b.le    1ebb4 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x644>
+    0.00 :   1e6e0:       ldp     x2, x4, [sp, #264]
+    0.00 :   1e6e4:       sub     w24, w0, #0x1
+    0.00 :   1e6e8:       movi    v13.2s, #0x0
+    0.00 :   1e6ec:       mov     w1, #0xfdb                      // #4059
+    0.00 :   1e6f0:       movk    w1, #0x4049, lsl #16
+    0.00 :   1e6f4:       str     w1, [sp, #208]
+    0.00 :   1e6f8:       mov     w1, #0x43870000                 // #1132920832
+    0.00 :   1e6fc:       mov     w23, #0x0                       // #0
+    0.00 :   1e700:       mov     w22, #0x0                       // #0
+    0.00 :   1e704:       stp     d14, d15, [sp, #144]
+    0.00 :   1e708:       add     x24, x24, x4
+    0.00 :   1e70c:       add     x0, x2, #0x4
+    0.00 :   1e710:       fmov    s15, s13
+    0.00 :   1e714:       add     x0, x0, x24, lsl #2
+    0.07 :   1e718:       str     x0, [sp, #160]
+    0.00 :   1e71c:       mov     w0, #0xfa35                     // #64053
+    0.00 :   1e720:       add     x28, x2, x4, lsl #2
+    0.00 :   1e724:       movk    w0, #0x3c8e, lsl #16
+    0.05 :   1e728:       stp     w1, w0, [sp, #212]
+    0.00 :   1e72c:       mov     w0, #0xfdb                      // #4059
+    0.00 :   1e730:       mov     w1, #0x999a                     // #39322
+    0.00 :   1e734:       movk    w0, #0x4149, lsl #16
+    0.00 :   1e738:       movk    w1, #0x3e99, lsl #16
+    0.00 :   1e73c:       str     w1, [sp, #184]
+    0.00 :   1e740:       str     w0, [sp, #220]
+    0.00 :   1e744:       adrp    x0, 68000 <__elmfire_vars_MOD___vtab_elmfire_vars_Ucb_ellipse+0x28>
+    0.00 :   1e748:       str     x0, [sp, #192]
+    0.00 :   1e74c:       str     x2, [sp, #232]
+    0.00 :   1e750:       b       1e764 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x1f4>
+    0.00 :   1e754:       ldr     x0, [sp, #160]
+    0.00 :   1e758:       add     x28, x28, #0x4
+    0.00 :   1e75c:       cmp     x28, x0
+    0.00 :   1e760:       b.eq    1e97c <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x40c>  // b.none
+    0.35 :   1e764:       ldp     x5, x1, [x27, #24]
+    0.00 :   1e768:       add     x21, x26, #0x570
+ elmfire_spread_rate.f90:417    2.79 :   1e76c:       ldrsw   x3, [x28, #4]
+    0.00 :   1e770:       add     x0, x21, #0xc
+    0.00 :   1e774:       mov     x2, x20
+    0.00 :   1e778:       add     x3, x3, x1
+    0.00 :   1e77c:       mov     x1, x19
+ elmfire_spread_rate.f90:417    6.10 :   1e780:       ldr     x24, [x5, x3, lsl #3]
+    0.00 :   1e784:       bl      1c470 <__elmfire_subs_MOD_accumulate_cpu_usage>
+    0.14 :   1e788:       add     x0, x21, #0x10
+    0.00 :   1e78c:       mov     x2, x20
+    0.00 :   1e790:       mov     x1, x19
+ elmfire_spread_rate.f90:422   21.59 :   1e794:       ldr     s10, [x24, #36]
+    0.00 :   1e798:       bl      1c470 <__elmfire_subs_MOD_accumulate_cpu_usage>
+    0.16 :   1e79c:       ldr     x0, [x25]
+    0.00 :   1e7a0:       sub     w8, w22, #0x1
+    0.09 :   1e7a4:       ldp     w1, w5, [x24, #56]
+    0.00 :   1e7a8:       sub     w6, w23, #0x1
+    0.07 :   1e7ac:       ldp     w2, w0, [x0, #56]
+    0.00 :   1e7b0:       subs    w2, w2, w1
+    0.00 :   1e7b4:       csinc   w22, w8, w22, mi  // mi = first
+    0.00 :   1e7b8:       subs    w0, w0, w5
+    0.00 :   1e7bc:       scvtf   s1, w2
+    0.00 :   1e7c0:       csinc   w23, w6, w23, mi  // mi = first
+    0.07 :   1e7c4:       scvtf   s0, w0
+    0.02 :   1e7c8:       fmul    s8, s0, s0
+    0.00 :   1e7cc:       fmadd   s8, s1, s1, s8
+    0.02 :   1e7d0:       fsqrt   s8, s8
+ elmfire_spread_rate.f90:448    8.68 :   1e7d4:       fcmp    s8, #0.0
+    0.00 :   1e7d8:       b.eq    1e754 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x1e4>  // b.none
+ elmfire_spread_rate.f90:422    3.00 :   1e7dc:       ldr     s2, [sp, #208]
+    0.00 :   1e7e0:       fmul    s9, s10, s10
+    0.00 :   1e7e4:       adrp    x0, 68000 <__elmfire_vars_MOD___vtab_elmfire_vars_Ucb_ellipse+0x28>
+    0.00 :   1e7e8:       movi    v14.2s, #0x0
+    0.00 :   1e7ec:       fmov    s12, #1.000000000000000000e+00
+    0.00 :   1e7f0:       fmul    s2, s10, s2
+    0.00 :   1e7f4:       ldr     x5, [x0, #3672]
+    0.10 :   1e7f8:       str     x5, [sp, #224]
+    0.00 :   1e7fc:       fmul    s10, s2, s10
+ elmfire_spread_rate.f90:446    2.77 :   1e800:       ldr     s2, [x5]
+    0.00 :   1e804:       fdiv    s10, s11, s10
+    0.00 :   1e808:       fmul    s8, s8, s2
+    0.00 :   1e80c:       bl      60a0 <atan2f@plt>
+    0.17 :   1e810:       ldp     s3, s5, [x24, #40]
+    0.00 :   1e814:       mov     x2, x20
+    0.07 :   1e818:       ldr     s2, [x24, #16]
+    0.00 :   1e81c:       mov     x1, x19
+    0.00 :   1e820:       ldr     s4, [sp, #184]
+    0.00 :   1e824:       add     x0, x21, #0x14
+    0.00 :   1e828:       fsub    s3, s3, s5
+    0.43 :   1e82c:       ldr     s1, [x24, #216]
+    0.00 :   1e830:       fmul    s2, s2, s4
+    0.00 :   1e834:       fmul    s3, s3, s2
+    0.20 :   1e838:       ldp     s4, s2, [sp, #212]
+    0.00 :   1e83c:       fdiv    s3, s3, s9
+    0.00 :   1e840:       fsub    s1, s4, s1
+    0.00 :   1e844:       fmsub   s0, s1, s2, s0
+    0.14 :   1e848:       str     s0, [sp, #200]
+ elmfire_spread_rate.f90:457    5.92 :   1e84c:       str     s3, [sp, #188]
+    0.00 :   1e850:       bl      1c470 <__elmfire_subs_MOD_accumulate_cpu_usage>
+    0.14 :   1e854:       ldr     s0, [sp, #200]
+    0.00 :   1e858:       bl      6000 <cosf@plt>
+    0.13 :   1e85c:       ldp     s1, s2, [x24, #40]
+    0.00 :   1e860:       add     x0, x21, #0x18
+    0.00 :   1e864:       ldr     s3, [sp, #188]
+    0.00 :   1e868:       mov     x2, x20
+    0.34 :   1e86c:       ldr     s5, [x24, #348]
+    0.00 :   1e870:       mov     x1, x19
+    0.00 :   1e874:       fmsub   s1, s2, s0, s1
+    0.00 :   1e878:       fmul    s9, s9, s3
+    0.00 :   1e87c:       ldp     s2, s0, [sp, #176]
+    0.00 :   1e880:       fdiv    s3, s9, s1
+    0.00 :   1e884:       fadd    s9, s0, s3
+    0.00 :   1e888:       str     s3, [sp, #200]
+    0.32 :   1e88c:       ldr     s3, [sp, #172]
+    0.00 :   1e890:       fsub    s9, s9, s8
+ elmfire_spread_rate.f90:468    1.45 :   1e894:       fmul    s9, s9, s2
+    0.00 :   1e898:       fminnm  s9, s9, s12
+    0.00 :   1e89c:       fmaxnm  s9, s9, s14
+    0.00 :   1e8a0:       fmul    s2, s3, s9
+    0.00 :   1e8a4:       fmul    s2, s2, s5
+ elmfire_spread_rate.f90:472    1.03 :   1e8a8:       fmul    s2, s2, s10
+ elmfire_spread_rate.f90:472    5.50 :   1e8ac:       str     s2, [sp, #188]
+    0.00 :   1e8b0:       bl      1c470 <__elmfire_subs_MOD_accumulate_cpu_usage>
+    0.10 :   1e8b4:       ldr     s3, [sp, #200]
+    0.00 :   1e8b8:       fcmpe   s9, s12
+    0.04 :   1e8bc:       ldr     s0, [x24, #324]
+    0.00 :   1e8c0:       ldp     s2, s1, [sp, #176]
+    0.00 :   1e8c4:       fadd    s0, s3, s0
+    0.00 :   1e8c8:       fadd    s0, s0, s1
+    0.00 :   1e8cc:       fsub    s0, s0, s8
+    0.00 :   1e8d0:       fmul    s0, s0, s2
+    0.03 :   1e8d4:       ldr     s2, [sp, #188]
+    0.00 :   1e8d8:       fminnm  s0, s0, s12
+ elmfire_spread_rate.f90:480    5.73 :   1e8dc:       fmaxnm  s0, s0, s14
+    0.00 :   1e8e0:       fmsub   s1, s9, s0, s0
+    0.00 :   1e8e4:       b.mi    1eb30 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x5c0>  // b.first
+    0.24 :   1e8e8:       fsub    s8, s8, s3
+    0.01 :   1e8ec:       ldr     s0, [sp, #172]
+    0.00 :   1e8f0:       add     x0, x26, #0x570
+    0.00 :   1e8f4:       ldr     s3, [sp, #184]
+    0.00 :   1e8f8:       add     x0, x0, #0x1c
+    0.00 :   1e8fc:       ldr     s4, [sp, #204]
+    0.00 :   1e900:       mov     x2, x20
+    0.04 :   1e904:       ldr     s5, [x24, #348]
+    0.00 :   1e908:       add     x28, x28, #0x4
+    0.00 :   1e90c:       fmul    s0, s0, s3
+    0.00 :   1e910:       ldr     s3, [sp, #220]
+    0.00 :   1e914:       ldr     x1, [sp, #192]
+    0.00 :   1e918:       fmul    s3, s8, s3
+    0.00 :   1e91c:       fmul    s0, s0, s4
+ elmfire_spread_rate.f90:491    2.93 :   1e920:       ldr     x3, [x1, #3688]
+    0.00 :   1e924:       mov     x1, x19
+    0.00 :   1e928:       fmul    s8, s3, s8
+    0.00 :   1e92c:       fmul    s0, s0, s1
+    0.01 :   1e930:       ldr     s4, [x3]
+    0.08 :   1e934:       ldr     x3, [x25]
+    0.00 :   1e938:       fmul    s0, s0, s5
+    0.00 :   1e93c:       fmul    s3, s4, s2
+    2.71 :   1e940:       ldr     s1, [x3, #344]
+    0.00 :   1e944:       fmul    s0, s0, s11
+    0.00 :   1e948:       fmadd   s15, s3, s11, s15
+    0.00 :   1e94c:       fmul    s10, s0, s10
+    0.00 :   1e950:       fdiv    s10, s10, s8
+    0.00 :   1e954:       fadd    s2, s2, s10
+    0.00 :   1e958:       fmul    s10, s4, s10
+    0.01 :   1e95c:       fmul    s2, s2, s4
+    0.00 :   1e960:       fmadd   s13, s10, s11, s13
+    0.00 :   1e964:       fmadd   s2, s2, s11, s1
+ elmfire_spread_rate.f90:491    8.32 :   1e968:       str     s2, [x3, #344]
+    0.00 :   1e96c:       bl      1c470 <__elmfire_subs_MOD_accumulate_cpu_usage>
+    0.14 :   1e970:       ldr     x0, [sp, #160]
+    0.00 :   1e974:       cmp     x28, x0
+    0.00 :   1e978:       b.ne    1e764 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x1f4>  // b.any
+ elmfire_spread_rate.f90:504    1.48 :   1e97c:       add     x0, x26, #0x570
+    0.00 :   1e980:       mov     x2, x20
+    0.00 :   1e984:       add     x0, x0, #0x20
+    0.00 :   1e988:       mov     x1, x19
+    0.00 :   1e98c:       bl      1c470 <__elmfire_subs_MOD_accumulate_cpu_usage>
+    0.01 :   1e990:       fadd    s0, s15, s13
+    0.00 :   1e994:       mov     w0, #0x6000                     // #24576
+    0.00 :   1e998:       movk    w0, #0x46ea, lsl #16
+    0.00 :   1e99c:       fmov    s1, w0
+    0.00 :   1e9a0:       ldr     x4, [x25]
+    0.00 :   1e9a4:       fcmpe   s0, s1
+    0.01 :   1e9a8:       str     s15, [x4, #356]
+    0.06 :   1e9ac:       str     s13, [x4, #360]
+    0.00 :   1e9b0:       b.le    1eb78 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x608>
+    0.13 :   1e9b4:       mov     w0, #0x42700000                 // #1114636288
+    0.01 :   1e9b8:       fmov    s1, w0
+    0.00 :   1e9bc:       ldp     d14, d15, [sp, #144]
+    0.00 :   1e9c0:       fmul    s0, s0, s1
+    0.00 :   1e9c4:       mov     w0, #0x8000                     // #32768
+    0.00 :   1e9c8:       movk    w0, #0x453b, lsl #16
+    0.00 :   1e9cc:       fmov    s2, w0
+    0.23 :   1e9d0:       ldr     x0, [sp, #192]
+    0.00 :   1e9d4:       adrp    x2, 68000 <__elmfire_vars_MOD___vtab_elmfire_vars_Ucb_ellipse+0x28>
+    0.00 :   1e9d8:       ldr     s5, [x4, #224]
+    0.00 :   1e9dc:       fmov    s8, #1.000000000000000000e+00
+    0.00 :   1e9e0:       ldr     x27, [x2, #3672]
+    0.00 :   1e9e4:       mov     w3, #0x1                        // #1
+    0.06 :   1e9e8:       ldr     x1, [x0, #3688]
+    0.00 :   1e9ec:       mov     w0, #0xebf                      // #3775
+    0.00 :   1e9f0:       movk    w0, #0x3e9c, lsl #16
+    0.01 :   1e9f4:       fmov    s1, w0
+    0.02 :   1e9f8:       ldr     s4, [x27]
+    0.00 :   1e9fc:       mov     w0, #0x420c0000                 // #1108082688
+    0.00 :   1ea00:       ldr     s11, [x1]
+    0.12 :   1ea04:       fmov    s3, w0
+    0.00 :   1ea08:       mov     w0, #0x6666                     // #26214
+    0.00 :   1ea0c:       mov     x2, x20
+    0.00 :   1ea10:       fcmpe   s5, s3
+    0.00 :   1ea14:       movk    w0, #0x3fe6, lsl #16
+    0.00 :   1ea18:       fmul    s11, s11, s1
+    0.07 :   1ea1c:       fmov    s1, w0
+    0.00 :   1ea20:       mov     x1, x19
+    0.00 :   1ea24:       add     x0, x26, #0x570
+    0.00 :   1ea28:       add     x0, x0, #0x24
+    0.00 :   1ea2c:       fcsel   s1, s1, s8, ls  // ls = plast
+    0.00 :   1ea30:       cmp     w22, #0x0
+    0.00 :   1ea34:       fmul    s11, s11, s4
+    0.00 :   1ea38:       cneg    w5, w3, lt  // lt = tstop
+    0.00 :   1ea3c:       cmp     w23, #0x0
+    0.00 :   1ea40:       str     w5, [x4, #332]
+    0.00 :   1ea44:       cneg    w3, w3, lt  // lt = tstop
+    0.00 :   1ea48:       str     w3, [x4, #336]
+    0.00 :   1ea4c:       fmul    s11, s11, s2
+    0.03 :   1ea50:       fdiv    s0, s0, s11
+    0.00 :   1ea54:       fdiv    s0, s0, s1
+    0.15 :   1ea58:       str     s0, [x4, #352]
+    0.00 :   1ea5c:       bl      1c470 <__elmfire_subs_MOD_accumulate_cpu_usage>
+    0.00 :   1ea60:       mov     x0, x25
+    0.00 :   1ea64:       bl      1e078 <__elmfire_spread_rate_MOD_ellipse_ucb>
+    0.03 :   1ea68:       ldr     x3, [x25]
+    0.00 :   1ea6c:       mov     w0, #0xb717                     // #46871
+    0.00 :   1ea70:       movk    w0, #0x38d1, lsl #16
+    0.00 :   1ea74:       fmov    s5, w0
+    0.00 :   1ea78:       ldp     s1, s0, [x3, #36]
+    0.01 :   1ea7c:       ldr     s4, [x3, #44]
+    0.00 :   1ea80:       ldr     s3, [x3, #352]
+    0.00 :   1ea84:       fadd    s1, s1, s1
+    0.00 :   1ea88:       fadd    s2, s0, s4
+    0.00 :   1ea8c:       fsub    s0, s0, s4
+    0.00 :   1ea90:       fmul    s4, s3, s1
+    0.00 :   1ea94:       fadd    s1, s2, s1
+    0.00 :   1ea98:       fmul    s2, s3, s2
+    0.03 :   1ea9c:       fmul    s3, s3, s0
+    0.00 :   1eaa0:       fadd    s0, s1, s0
+    0.05 :   1eaa4:       fdiv    s1, s4, s0
+    0.01 :   1eaa8:       fdiv    s2, s2, s0
+    0.00 :   1eaac:       fdiv    s0, s3, s0
+    0.01 :   1eab0:       fcmpe   s1, s5
+    0.00 :   1eab4:       str     s2, [x3, #204]
+    0.14 :   1eab8:       str     s0, [x3, #276]
+    0.00 :   1eabc:       b.le    1eb48 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x5d8>
+ elmfire_spread_rate.f90:580    6.82 :   1eac0:       fadd    s2, s2, s0
+    0.00 :   1eac4:       fmov    s3, #5.000000000000000000e-01
+    0.00 :   1eac8:       fmov    s0, #1.000000000000000000e+01
+    0.00 :   1eacc:       fmul    s2, s2, s3
+    0.00 :   1ead0:       fdiv    s2, s2, s1
+    0.00 :   1ead4:       fminnm  s2, s2, s0
+    0.02 :   1ead8:       str     wzr, [x3, #344]
+    0.00 :   1eadc:       add     x0, x26, #0x570
+    0.00 :   1eae0:       add     x0, x0, #0x28
+    0.00 :   1eae4:       mov     x2, x20
+    0.00 :   1eae8:       mov     x1, x19
+    0.14 :   1eaec:       str     s2, [x3, #280]
+    0.00 :   1eaf0:       bl      1c470 <__elmfire_subs_MOD_accumulate_cpu_usage>
+    0.01 :   1eaf4:       ldr     x0, [sp, #328]
+    0.00 :   1eaf8:       cbz     x0, 1eb00 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x590>
+    0.10 :   1eafc:       bl      6110 <free@plt>
+    0.02 :   1eb00:       ldr     x0, [sp, #232]
+    0.00 :   1eb04:       cbz     x0, 1eb50 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x5e0>
+    0.00 :   1eb08:       ldp     x19, x20, [sp, #16]
+    0.00 :   1eb0c:       ldp     x21, x22, [sp, #32]
+    0.00 :   1eb10:       ldp     x23, x24, [sp, #48]
+    0.13 :   1eb14:       ldp     x25, x26, [sp, #64]
+    0.00 :   1eb18:       ldp     x27, x28, [sp, #80]
+    0.00 :   1eb1c:       ldp     d8, d9, [sp, #96]
+    0.00 :   1eb20:       ldp     d10, d11, [sp, #112]
+    0.00 :   1eb24:       ldp     d12, d13, [sp, #128]
+    0.00 :   1eb28:       ldp     x29, x30, [sp], #416
+    0.00 :   1eb2c:       b       6110 <free@plt>
+    0.25 :   1eb30:       fcmpe   s9, s14
+    0.00 :   1eb34:       b.le    1e8e8 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x378>
+    0.20 :   1eb38:       ldr     x5, [sp, #224]
+    0.00 :   1eb3c:       ldr     s8, [x5]
+    0.00 :   1eb40:       fmsub   s8, s8, s9, s8
+    0.00 :   1eb44:       b       1e8ec <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x37c>
+ elmfire_spread_rate.f90:582    5.02 :   1eb48:       fmov    s2, s8
+    0.00 :   1eb4c:       b       1ead8 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x568>
+    0.00 :   1eb50:       ldp     x19, x20, [sp, #16]
+    0.00 :   1eb54:       ldp     x21, x22, [sp, #32]
+    0.00 :   1eb58:       ldp     x23, x24, [sp, #48]
+    0.00 :   1eb5c:       ldp     x25, x26, [sp, #64]
+    0.00 :   1eb60:       ldp     x27, x28, [sp, #80]
+    0.00 :   1eb64:       ldp     d8, d9, [sp, #96]
+    0.00 :   1eb68:       ldp     d10, d11, [sp, #112]
+    0.00 :   1eb6c:       ldp     d12, d13, [sp, #128]
+    0.00 :   1eb70:       ldp     x29, x30, [sp], #416
+    0.00 :   1eb74:       ret
+    0.16 :   1eb78:       fdiv    s11, s0, s11
+    0.00 :   1eb7c:       mov     w0, #0x42700000                 // #1114636288
+    0.02 :   1eb80:       fmov    s1, w0
+    0.00 :   1eb84:       ldp     d14, d15, [sp, #144]
+    0.00 :   1eb88:       fmul    s0, s0, s1
+    0.00 :   1eb8c:       fmul    s11, s11, s11
+    0.00 :   1eb90:       mov     w0, #0x126f                     // #4719
+    0.00 :   1eb94:       movk    w0, #0x3a83, lsl #16
+    0.00 :   1eb98:       fmov    s1, w0
+    0.00 :   1eb9c:       mov     w0, #0x1b00                     // #6912
+    0.00 :   1eba0:       movk    w0, #0x4a37, lsl #16
+    0.00 :   1eba4:       fmov    s2, w0
+    0.00 :   1eba8:       fmaxnm  s11, s11, s1
+    0.00 :   1ebac:       fdiv    s2, s2, s11
+    0.00 :   1ebb0:       b       1e9d0 <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x460>
+    0.00 :   1ebb4:       add     x0, x21, #0x20
+    0.00 :   1ebb8:       mov     x1, x19
+    0.00 :   1ebbc:       mov     x2, x20
+    0.00 :   1ebc0:       bl      1c470 <__elmfire_subs_MOD_accumulate_cpu_usage>
+    0.00 :   1ebc4:       ldr     x4, [x25]
+    0.00 :   1ebc8:       movi    v1.2s, #0x0
+    0.00 :   1ebcc:       adrp    x1, 68000 <__elmfire_vars_MOD___vtab_elmfire_vars_Ucb_ellipse+0x28>
+    0.00 :   1ebd0:       str     x1, [sp, #192]
+    0.00 :   1ebd4:       add     x0, x4, #0x200
+    0.00 :   1ebd8:       mov     w23, #0x0                       // #0
+    0.00 :   1ebdc:       ldr     x1, [sp, #264]
+    0.00 :   1ebe0:       fmov    s0, s1
+    0.00 :   1ebe4:       fdiv    s11, s1, s11
+    0.00 :   1ebe8:       mov     w22, #0x0                       // #0
+    0.00 :   1ebec:       stur    xzr, [x0, #-156]
+    0.00 :   1ebf0:       str     x1, [sp, #232]
+    0.00 :   1ebf4:       b       1eb8c <__elmfire_spread_rate_MOD_umd_ucb_bldg_spread+0x61c>

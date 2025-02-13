@@ -14,8 +14,6 @@ mkdir -p $SCRATCH $OUTPUTS
 #cp 01-run.sh $OUTPUTS/01-run.sh
 cp elmfire.data $OUTPUTS/elmfire.data
 
-
-#ELMFIRE_VER=${ELMFIRE_VER:-2024.0103}
 ELMFIRE_VER=${ELMFIRE_VER:-2024.0916}
 ELMFIRE_INSTALL_DIR=${ELMFIRE_INSTALL_DIR:-$ELMFIRE_BASE_DIR/build/linux/bin}
 ELMFIRE=$ELMFIRE_INSTALL_DIR/elmfire_$ELMFIRE_VER
@@ -32,7 +30,7 @@ ELMFIRE_HOSTS=`printf "$(hostname),%.0s" {1..64}`
 
 # GDB DEBUGGING
 # dir /home/katrinasharonin/Downloads/elmfire/build/source
-gdb --args $ELMFIRE_DEBUG elmfire.data 
+# gdb --args $ELMFIRE_DEBUG elmfire.data 
 
 # REGULAR
 # $ELMFIRE elmfire.data
@@ -49,9 +47,9 @@ gdb --args $ELMFIRE_DEBUG elmfire.data
 # PERF PROFILE
 # sudo sysctl -w kernel.perf_event_paranoid=-1
 
-# perf record -o /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf.data -g $ELMFIRE_DEBUG elmfire.data 
-# perf report -n -i /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf.data > /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf_analysis.txt
-# perf annotate -l -s __elmfire_spread_rate_MOD_umd_ucb_bldg_spread -i /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf.data > /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/umd_ucb_target_analysis.txt
+perf record -o /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf.data -g $ELMFIRE_DEBUG elmfire.data 
+perf report -n -i /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf.data > /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf_analysis.txt
+perf annotate -l -s __elmfire_spread_rate_MOD_umd_ucb_bldg_spread -i /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf.data > /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/umd_ucb_target_analysis.txt
 
 # perf report -i /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf.data > /home/katrinasharonin/Downloads/elmfire/tutorials/for-kat/perf_report.txt
 
