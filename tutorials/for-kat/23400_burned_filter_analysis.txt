@@ -1,0 +1,398 @@
+
+Sorted summary for file /home/katrinasharonin/Downloads/elmfire/build/linux/bin/elmfire_debug_2024.0916
+----------------------------------------------
+
+   84.89 elmfire_spread_rate.f90:733
+    8.93 elmfire_spread_rate.f90:736
+    4.44 elmfire_spread_rate.f90:743
+ Percent |	Source code & Disassembly of elmfire_debug_2024.0916 for cpu-clock:pppH (5999060 samples, percent: local period)
+--------------------------------------------------------------------------------------------------------------------------------
+         :
+         :
+         :
+         :           Disassembly of section .text:
+         :
+         :           000000000001d988 <__elmfire_spread_rate_MOD_burned_filter>:
+         :           __elmfire_spread_rate_MOD_burned_filter():
+    0.00 :   1d988:       stp     x29, x30, [sp, #-352]!
+    0.00 :   1d98c:       mov     x29, sp
+    0.00 :   1d990:       stp     x19, x20, [sp, #16]
+    0.00 :   1d994:       stp     x21, x22, [sp, #32]
+    0.00 :   1d998:       stp     x23, x24, [sp, #48]
+    0.00 :   1d99c:       stp     x25, x26, [sp, #64]
+    0.00 :   1d9a0:       stp     x27, x28, [sp, #80]
+    0.00 :   1d9a4:       stp     d8, d9, [sp, #96]
+    0.00 :   1d9a8:       stp     d10, d11, [sp, #112]
+    0.00 :   1d9ac:       mov     x23, x0
+    0.00 :   1d9b0:       xpaclri
+    0.00 :   1d9b4:       mov     x20, x1
+    0.00 :   1d9b8:       mov     x26, x4
+    0.00 :   1d9bc:       mov     x27, x5
+    0.00 :   1d9c0:       mov     x0, x30
+    0.00 :   1d9c4:       mov     x21, x2
+    0.00 :   1d9c8:       mov     x28, x3
+    0.00 :   1d9cc:       mov     x25, x6
+    0.00 :   1d9d0:       bl      6090 <_mcount@plt>
+    0.00 :   1d9d4:       ldp     x19, x5, [x23, #48]
+    0.00 :   1d9d8:       mov     x0, #0x4                        // #4
+    0.00 :   1d9dc:       stp     x0, xzr, [sp, #176]
+    0.00 :   1d9e0:       mov     x0, #0x1                        // #1
+    0.00 :   1d9e4:       mov     w1, #0x201                      // #513
+    0.00 :   1d9e8:       strh    w1, [sp, #188]
+    0.00 :   1d9ec:       sub     x8, x5, x19
+    0.00 :   1d9f0:       adds    x4, x8, x0
+    0.00 :   1d9f4:       csel    x24, x4, xzr, pl  // pl = nfrst
+    0.00 :   1d9f8:       cmp     w24, #0x0
+    0.00 :   1d9fc:       csel    w1, w24, wzr, ge  // ge = tcont
+    0.00 :   1da00:       str     w1, [sp, #156]
+    0.00 :   1da04:       b.le    1da14 <__elmfire_spread_rate_MOD_burned_filter+0x8c>
+    0.00 :   1da08:       sbfiz   x0, x1, #2, #32
+    0.00 :   1da0c:       cmp     x0, #0x0
+    0.00 :   1da10:       csinc   x0, x0, xzr, ne  // ne = any
+    0.00 :   1da14:       stp     x5, x8, [sp, #128]
+    0.00 :   1da18:       str     x4, [sp, #144]
+    0.00 :   1da1c:       bl      63e0 <malloc@plt>
+    0.00 :   1da20:       str     x0, [sp, #160]
+    0.00 :   1da24:       mov     x22, x0
+    0.00 :   1da28:       ldp     x5, x8, [sp, #128]
+    0.00 :   1da2c:       ldr     x4, [sp, #144]
+    0.00 :   1da30:       cbz     x0, 1df58 <__elmfire_spread_rate_MOD_burned_filter+0x5d0>
+    0.00 :   1da34:       ldr     s11, [x25]
+    0.00 :   1da38:       adrp    x1, 4e000 <__elmfire_vars_MOD___def_init_elmfire_vars_Dll+0xd00>
+    0.00 :   1da3c:       ldr     s8, [x28]
+    0.00 :   1da40:       sxtw    x2, w24
+    0.00 :   1da44:       ldp     x28, x25, [x23]
+    0.00 :   1da48:       mov     x6, #0xffffffffffffffff         // #-1
+    0.00 :   1da4c:       ldr     q0, [x1, #2048]
+    0.00 :   1da50:       mov     x1, #0x1                        // #1
+    0.00 :   1da54:       ldr     x3, [x23, #64]
+    0.00 :   1da58:       str     x6, [sp, #168]
+    0.00 :   1da5c:       ldr     s10, [x26]
+    0.00 :   1da60:       scvtf   s11, s11
+    0.00 :   1da64:       ldr     s9, [x27]
+    0.00 :   1da68:       add     x25, x3, x25
+    0.00 :   1da6c:       stp     x1, x2, [sp, #208]
+    0.00 :   1da70:       scvtf   s8, s8
+    0.00 :   1da74:       scvtf   s10, s10
+    0.00 :   1da78:       str     q0, [sp, #192]
+    0.00 :   1da7c:       scvtf   s9, s9
+    0.00 :   1da80:       cmp     x4, x2
+    0.00 :   1da84:       sub     x26, x1, x19
+    0.00 :   1da88:       add     x27, x3, x25
+    0.00 :   1da8c:       b.eq    1daa8 <__elmfire_spread_rate_MOD_burned_filter+0x120>  // b.none
+    0.00 :   1da90:       adds    x2, x2, x6
+    0.00 :   1da94:       str     x4, [sp, #216]
+    0.00 :   1da98:       csel    x2, x2, x6, pl  // pl = nfrst
+    0.00 :   1da9c:       cmp     x8, x2
+    0.00 :   1daa0:       b.ne    1dee4 <__elmfire_spread_rate_MOD_burned_filter+0x55c>  // b.any
+    0.00 :   1daa4:       mov     x2, x4
+    0.00 :   1daa8:       cmp     x5, x19
+    0.00 :   1daac:       b.lt    1db18 <__elmfire_spread_rate_MOD_burned_filter+0x190>  // b.tstop
+    0.00 :   1dab0:       add     x4, x22, x26, lsl #2
+    0.00 :   1dab4:       mov     x3, x19
+    0.00 :   1dab8:       sub     x4, x4, #0x4
+    0.00 :   1dabc:       add     x0, x28, x25, lsl #2
+    0.00 :   1dac0:       add     x6, x28, x27, lsl #2
+    0.00 :   1dac4:       b       1daf8 <__elmfire_spread_rate_MOD_burned_filter+0x170>
+ elmfire_spread_rate.f90:733   30.06 :   1dac8:       fcmpe   s0, s9
+    0.00 :   1dacc:       b.hi    1db04 <__elmfire_spread_rate_MOD_burned_filter+0x17c>  // b.pmore
+ elmfire_spread_rate.f90:733    3.84 :   1dad0:       ldr     s0, [x6, x3, lsl #2]
+    0.00 :   1dad4:       fcmpe   s0, s10
+    0.00 :   1dad8:       b.lt    1db04 <__elmfire_spread_rate_MOD_burned_filter+0x17c>  // b.tstop
+    0.45 :   1dadc:       fcmpe   s0, s11
+    0.00 :   1dae0:       cset    w1, ls  // ls = plast
+    0.13 :   1dae4:       str     w1, [x4, x3, lsl #2]
+    0.00 :   1dae8:       cmp     x5, x3
+    0.00 :   1daec:       add     x3, x3, #0x1
+    0.00 :   1daf0:       b.eq    1db18 <__elmfire_spread_rate_MOD_burned_filter+0x190>  // b.none
+    0.00 :   1daf4:       nop
+ elmfire_spread_rate.f90:733   10.22 :   1daf8:       ldr     s0, [x0, x3, lsl #2]
+    0.00 :   1dafc:       fcmpe   s0, s8
+    0.00 :   1db00:       b.ge    1dac8 <__elmfire_spread_rate_MOD_burned_filter+0x140>  // b.tcont
+   31.69 :   1db04:       mov     w1, #0x0                        // #0
+    9.09 :   1db08:       str     w1, [x4, x3, lsl #2]
+    0.00 :   1db0c:       cmp     x5, x3
+    0.00 :   1db10:       add     x3, x3, #0x1
+    0.00 :   1db14:       b.ne    1daf8 <__elmfire_spread_rate_MOD_burned_filter+0x170>  // b.any
+    0.00 :   1db18:       stp     xzr, xzr, [x20, #16]
+    0.00 :   1db1c:       mov     x1, #0x4                        // #4
+    0.00 :   1db20:       mov     w0, #0x302                      // #770
+    0.00 :   1db24:       str     x1, [x20, #16]
+    0.00 :   1db28:       cmp     x2, #0x0
+    0.00 :   1db2c:       strh    w0, [x20, #28]
+    0.00 :   1db30:       mov     x3, #0x0                        // #0
+    0.00 :   1db34:       mov     w4, #0x0                        // #0
+    0.00 :   1db38:       b.le    1df14 <__elmfire_spread_rate_MOD_burned_filter+0x58c>
+    0.00 :   1db3c:       nop
+ elmfire_spread_rate.f90:736    8.93 :   1db40:       ldr     w1, [x22, x3, lsl #2]
+    0.00 :   1db44:       add     x3, x3, #0x1
+    0.45 :   1db48:       cmp     w1, #0x0
+    0.00 :   1db4c:       cinc    w4, w4, ne  // ne = any
+    0.45 :   1db50:       cmp     x3, x2
+    0.00 :   1db54:       b.ne    1db40 <__elmfire_spread_rate_MOD_burned_filter+0x1b8>  // b.any
+    0.01 :   1db58:       sxtw    x10, w4
+    0.00 :   1db5c:       mvn     x19, x10
+    0.00 :   1db60:       lsl     x0, x10, #3
+    0.00 :   1db64:       cbz     w4, 1df08 <__elmfire_spread_rate_MOD_burned_filter+0x580>
+    0.00 :   1db68:       ldr     x1, [x20]
+    0.00 :   1db6c:       cbnz    x1, 1df64 <__elmfire_spread_rate_MOD_burned_filter+0x5dc>
+    0.00 :   1db70:       cmp     x0, #0x0
+    0.00 :   1db74:       mov     x25, #0x1                       // #1
+    0.00 :   1db78:       csel    x0, x0, x25, ne  // ne = any
+    0.00 :   1db7c:       str     x10, [sp, #128]
+    0.00 :   1db80:       bl      63e0 <malloc@plt>
+    0.00 :   1db84:       str     x0, [x20]
+    0.00 :   1db88:       mov     x5, x0
+    0.00 :   1db8c:       cbz     x0, 1df58 <__elmfire_spread_rate_MOD_burned_filter+0x5d0>
+    0.00 :   1db90:       ldp     x1, x4, [x23, #64]
+    0.00 :   1db94:       adrp    x0, 4e000 <__elmfire_vars_MOD___def_init_elmfire_vars_Dll+0xd00>
+    0.00 :   1db98:       stp     x5, xzr, [sp, #224]
+    0.00 :   1db9c:       mov     w9, #0x301                      // #769
+    0.00 :   1dba0:       ldr     w5, [sp, #156]
+    0.00 :   1dba4:       ldr     q0, [x0, #2048]
+    0.00 :   1dba8:       mov     x6, #0x2                        // #2
+    0.00 :   1dbac:       sub     x4, x25, x4
+    0.00 :   1dbb0:       sbfiz   x5, x5, #2, #32
+    0.00 :   1dbb4:       ldr     x0, [x23]
+    0.00 :   1dbb8:       str     x19, [x20, #8]
+    0.00 :   1dbbc:       mul     x4, x4, x1
+    0.00 :   1dbc0:       str     x6, [x20, #80]
+    0.00 :   1dbc4:       ldr     q1, [x23, #48]
+    0.00 :   1dbc8:       mov     x19, #0x4                       // #4
+    0.00 :   1dbcc:       ldr     x10, [sp, #128]
+    0.00 :   1dbd0:       add     x4, x0, x4, lsl #2
+    0.00 :   1dbd4:       stp     x25, x10, [x20, #48]
+    0.00 :   1dbd8:       add     x26, sp, #0xa0
+    0.00 :   1dbdc:       add     x28, sp, #0x120
+    0.00 :   1dbe0:       stp     x10, x25, [x20, #64]
+    0.00 :   1dbe4:       add     x27, sp, #0xe0
+    0.00 :   1dbe8:       mov     x2, x26
+    0.00 :   1dbec:       stp     x19, xzr, [sp, #240]
+    0.00 :   1dbf0:       mov     x1, x28
+    0.00 :   1dbf4:       mov     x0, x27
+    0.00 :   1dbf8:       stp     x19, xzr, [sp, #304]
+    0.00 :   1dbfc:       mov     x3, #0x0                        // #0
+    0.00 :   1dc00:       str     q0, [x20, #32]
+    0.00 :   1dc04:       str     x5, [sp, #128]
+    0.00 :   1dc08:       str     w9, [sp, #136]
+    0.00 :   1dc0c:       strh    w9, [sp, #252]
+    0.00 :   1dc10:       str     q0, [sp, #256]
+    0.00 :   1dc14:       stp     x25, x10, [sp, #272]
+    0.00 :   1dc18:       stp     x4, xzr, [sp, #288]
+    0.00 :   1dc1c:       strh    w9, [sp, #316]
+    0.00 :   1dc20:       stp     q0, q1, [sp, #320]
+    0.00 :   1dc24:       bl      5ff0 <_gfortran_pack@plt>
+    0.00 :   1dc28:       mov     x6, #0x2                        // #2
+    0.00 :   1dc2c:       ldp     x0, x5, [x20, #64]
+    0.00 :   1dc30:       stp     x19, xzr, [sp, #240]
+    0.00 :   1dc34:       ldr     w9, [sp, #136]
+    0.00 :   1dc38:       ldp     x3, x4, [x23, #64]
+    0.00 :   1dc3c:       stp     x19, xzr, [sp, #304]
+    0.00 :   1dc40:       mov     x2, x26
+    0.00 :   1dc44:       sub     x5, x6, x5
+    0.00 :   1dc48:       strh    w9, [sp, #252]
+    0.00 :   1dc4c:       ldr     x1, [x20]
+    0.00 :   1dc50:       strh    w9, [sp, #316]
+    0.00 :   1dc54:       mul     x5, x5, x0
+    0.00 :   1dc58:       sub     x4, x6, x4
+    0.00 :   1dc5c:       ldr     x0, [x23]
+    0.00 :   1dc60:       add     x5, x1, x5, lsl #2
+    0.00 :   1dc64:       mul     x4, x4, x3
+    0.00 :   1dc68:       stp     x5, xzr, [sp, #224]
+    0.00 :   1dc6c:       adrp    x5, 4e000 <__elmfire_vars_MOD___def_init_elmfire_vars_Dll+0xd00>
+    0.00 :   1dc70:       mov     x1, x28
+    0.00 :   1dc74:       ldr     q0, [x5, #2048]
+    0.00 :   1dc78:       add     x4, x0, x4, lsl #2
+    0.00 :   1dc7c:       ldr     q2, [x20, #48]
+    0.00 :   1dc80:       mov     x0, x27
+    0.00 :   1dc84:       ldr     q1, [x23, #48]
+    0.00 :   1dc88:       mov     x3, #0x0                        // #0
+    0.00 :   1dc8c:       str     q0, [sp, #256]
+    0.00 :   1dc90:       str     q2, [sp, #272]
+    0.00 :   1dc94:       stp     x4, xzr, [sp, #288]
+    0.00 :   1dc98:       str     q0, [sp, #320]
+    0.00 :   1dc9c:       str     q1, [sp, #336]
+    0.00 :   1dca0:       bl      5ff0 <_gfortran_pack@plt>
+    0.00 :   1dca4:       mov     w2, #0x101                      // #257
+    0.00 :   1dca8:       stp     xzr, xzr, [x21, #16]
+    0.00 :   1dcac:       mov     x0, #0x0                        // #0
+    0.00 :   1dcb0:       str     x19, [x21, #16]
+    0.00 :   1dcb4:       strh    w2, [x21, #28]
+    0.00 :   1dcb8:       ldp     x2, x3, [x21]
+    0.00 :   1dcbc:       stp     x2, x3, [sp, #288]
+    0.00 :   1dcc0:       ldp     x2, x3, [x21, #16]
+    0.00 :   1dcc4:       stp     x2, x3, [sp, #304]
+    0.00 :   1dcc8:       ldp     x4, x5, [x21, #32]
+    0.00 :   1dccc:       str     xzr, [sp, #288]
+    0.00 :   1dcd0:       ldp     x2, x3, [x21, #48]
+    0.00 :   1dcd4:       stp     x4, x5, [sp, #320]
+    0.00 :   1dcd8:       ldr     x23, [sp, #128]
+    0.00 :   1dcdc:       stp     x2, x3, [sp, #336]
+    0.00 :   1dce0:       mov     x1, x23
+    0.00 :   1dce4:       bl      6170 <realloc@plt>
+    0.00 :   1dce8:       cmp     x0, #0x0
+    0.00 :   1dcec:       mov     x20, x0
+    0.00 :   1dcf0:       ccmp    x23, #0x0, #0x4, eq  // eq = none
+    0.00 :   1dcf4:       b.ne    1df58 <__elmfire_spread_rate_MOD_burned_filter+0x5d0>  // b.any
+    0.00 :   1dcf8:       adrp    x0, 4e000 <__elmfire_vars_MOD___def_init_elmfire_vars_Dll+0xd00>
+    0.00 :   1dcfc:       cmp     w24, #0x0
+    0.00 :   1dd00:       ldr     q0, [x0, #2048]
+    0.00 :   1dd04:       b.le    1df24 <__elmfire_spread_rate_MOD_burned_filter+0x59c>
+    0.00 :   1dd08:       sub     w2, w24, #0x1
+    0.00 :   1dd0c:       cmp     w2, #0x5
+    0.00 :   1dd10:       b.ls    1df50 <__elmfire_spread_rate_MOD_burned_filter+0x5c8>  // b.plast
+    0.00 :   1dd14:       adrp    x3, 51000 <__elmfire_vars_MOD___def_init_elmfire_vars_Dll+0x3d00>
+    0.00 :   1dd18:       lsr     w0, w24, #2
+    0.00 :   1dd1c:       movi    v2.4s, #0x4
+    0.00 :   1dd20:       mov     x1, x20
+    0.00 :   1dd24:       ldr     q0, [x3, #1168]
+    0.00 :   1dd28:       add     x0, x20, w0, uxtw #4
+    0.00 :   1dd2c:       nop
+    0.05 :   1dd30:       mov     v1.16b, v0.16b
+    0.00 :   1dd34:       add     v0.4s, v0.4s, v2.4s
+    0.00 :   1dd38:       str     q1, [x1], #16
+ elmfire_spread_rate.f90:743    4.44 :   1dd3c:       cmp     x0, x1
+    0.16 :   1dd40:       b.ne    1dd30 <__elmfire_spread_rate_MOD_burned_filter+0x3a8>  // b.any
+    0.00 :   1dd44:       and     w25, w24, #0xfffffffc
+    0.00 :   1dd48:       and     x0, x24, #0xfffffffc
+    0.00 :   1dd4c:       cmp     w24, w25
+    0.00 :   1dd50:       add     w25, w25, #0x1
+    0.00 :   1dd54:       b.eq    1ddc0 <__elmfire_spread_rate_MOD_burned_filter+0x438>  // b.none
+    0.00 :   1dd58:       str     w25, [x20, x0, lsl #2]
+    0.00 :   1dd5c:       add     w1, w25, #0x1
+    0.00 :   1dd60:       cmp     w24, w1
+    0.00 :   1dd64:       add     x3, x0, #0x1
+    0.00 :   1dd68:       b.lt    1ddc0 <__elmfire_spread_rate_MOD_burned_filter+0x438>  // b.tstop
+    0.00 :   1dd6c:       str     w1, [x20, x3, lsl #2]
+    0.00 :   1dd70:       add     w1, w25, #0x2
+    0.00 :   1dd74:       cmp     w24, w1
+    0.00 :   1dd78:       add     x3, x0, #0x2
+    0.00 :   1dd7c:       b.lt    1ddc0 <__elmfire_spread_rate_MOD_burned_filter+0x438>  // b.tstop
+    0.00 :   1dd80:       str     w1, [x20, x3, lsl #2]
+    0.00 :   1dd84:       add     w1, w25, #0x3
+    0.00 :   1dd88:       cmp     w24, w1
+    0.00 :   1dd8c:       add     x3, x0, #0x3
+    0.00 :   1dd90:       b.lt    1ddc0 <__elmfire_spread_rate_MOD_burned_filter+0x438>  // b.tstop
+    0.00 :   1dd94:       str     w1, [x20, x3, lsl #2]
+    0.00 :   1dd98:       add     w1, w25, #0x4
+    0.00 :   1dd9c:       cmp     w24, w1
+    0.00 :   1dda0:       add     x3, x0, #0x4
+    0.00 :   1dda4:       b.lt    1ddc0 <__elmfire_spread_rate_MOD_burned_filter+0x438>  // b.tstop
+    0.00 :   1dda8:       str     w1, [x20, x3, lsl #2]
+    0.00 :   1ddac:       add     w25, w25, #0x5
+    0.00 :   1ddb0:       cmp     w24, w25
+    0.00 :   1ddb4:       add     x0, x0, #0x5
+    0.00 :   1ddb8:       b.lt    1ddc0 <__elmfire_spread_rate_MOD_burned_filter+0x438>  // b.tstop
+    0.00 :   1ddbc:       str     w25, [x20, x0, lsl #2]
+    0.00 :   1ddc0:       adrp    x0, 4e000 <__elmfire_vars_MOD___def_init_elmfire_vars_Dll+0xd00>
+    0.00 :   1ddc4:       mov     w1, w2
+    0.00 :   1ddc8:       add     x19, x1, #0x1
+    0.00 :   1ddcc:       mov     w2, #0x101                      // #257
+    0.00 :   1ddd0:       ldr     q0, [x0, #2048]
+    0.00 :   1ddd4:       lsl     x19, x19, #2
+    0.00 :   1ddd8:       mov     x0, #0x4                        // #4
+    0.00 :   1dddc:       stp     x0, xzr, [sp, #240]
+    0.00 :   1dde0:       mov     x0, x19
+    0.00 :   1dde4:       strh    w2, [sp, #252]
+    0.00 :   1dde8:       str     q0, [sp, #256]
+    0.00 :   1ddec:       stp     xzr, x1, [sp, #272]
+    0.00 :   1ddf0:       bl      63e0 <malloc@plt>
+    0.00 :   1ddf4:       mov     x2, x19
+    0.00 :   1ddf8:       mov     x1, x20
+    0.00 :   1ddfc:       mov     x19, x0
+    0.00 :   1de00:       stp     x0, xzr, [sp, #224]
+    0.00 :   1de04:       bl      6020 <memcpy@plt>
+    0.00 :   1de08:       mov     x2, x26
+    0.00 :   1de0c:       mov     x1, x27
+    0.00 :   1de10:       mov     x3, #0x0                        // #0
+    0.00 :   1de14:       mov     x0, x28
+    0.00 :   1de18:       bl      5ff0 <_gfortran_pack@plt>
+    0.00 :   1de1c:       mov     x0, x20
+    0.00 :   1de20:       bl      6110 <free@plt>
+    0.00 :   1de24:       mov     x0, x19
+    0.00 :   1de28:       bl      6110 <free@plt>
+    0.00 :   1de2c:       ldr     x19, [x21]
+    0.00 :   1de30:       mov     x0, x19
+    0.00 :   1de34:       bl      6110 <free@plt>
+    0.00 :   1de38:       ldp     x3, x0, [x21, #48]
+    0.00 :   1de3c:       ldp     x1, x2, [sp, #336]
+    0.00 :   1de40:       sub     x1, x3, x1
+    0.00 :   1de44:       sub     x1, x1, x0
+    0.00 :   1de48:       ldr     x0, [sp, #288]
+    0.00 :   1de4c:       str     x0, [x21]
+    0.00 :   1de50:       cmn     x1, x2
+    0.00 :   1de54:       neg     x1, x3
+    0.00 :   1de58:       ccmp    x19, #0x0, #0x4, eq  // eq = none
+    0.00 :   1de5c:       b.eq    1dea0 <__elmfire_spread_rate_MOD_burned_filter+0x518>  // b.none
+    0.00 :   1de60:       add     x2, x2, x3
+    0.00 :   1de64:       mov     x0, #0x1                        // #1
+    0.00 :   1de68:       str     x1, [x21, #8]
+    0.00 :   1de6c:       stp     x0, x3, [x21, #40]
+    0.00 :   1de70:       str     x2, [x21, #56]
+    0.00 :   1de74:       cbz     x22, 1dec0 <__elmfire_spread_rate_MOD_burned_filter+0x538>
+    0.00 :   1de78:       mov     x0, x22
+    0.00 :   1de7c:       ldp     x19, x20, [sp, #16]
+    0.00 :   1de80:       ldp     x21, x22, [sp, #32]
+    0.00 :   1de84:       ldp     x23, x24, [sp, #48]
+    0.00 :   1de88:       ldp     x25, x26, [sp, #64]
+    0.00 :   1de8c:       ldp     x27, x28, [sp, #80]
+    0.00 :   1de90:       ldp     d8, d9, [sp, #96]
+    0.00 :   1de94:       ldp     d10, d11, [sp, #112]
+    0.00 :   1de98:       ldp     x29, x30, [sp], #352
+    0.00 :   1de9c:       b       6110 <free@plt>
+    0.00 :   1dea0:       mov     x3, #0x1                        // #1
+    0.00 :   1dea4:       mov     x1, #0xffffffffffffffff         // #-1
+    0.00 :   1dea8:       add     x2, x2, x3
+    0.00 :   1deac:       mov     x0, #0x1                        // #1
+    0.00 :   1deb0:       str     x1, [x21, #8]
+    0.00 :   1deb4:       stp     x0, x3, [x21, #40]
+    0.00 :   1deb8:       str     x2, [x21, #56]
+    0.00 :   1debc:       cbnz    x22, 1de78 <__elmfire_spread_rate_MOD_burned_filter+0x4f0>
+    0.00 :   1dec0:       ldp     x19, x20, [sp, #16]
+    0.00 :   1dec4:       ldp     x21, x22, [sp, #32]
+    0.00 :   1dec8:       ldp     x23, x24, [sp, #48]
+    0.00 :   1decc:       ldp     x25, x26, [sp, #64]
+    0.00 :   1ded0:       ldp     x27, x28, [sp, #80]
+    0.00 :   1ded4:       ldp     d8, d9, [sp, #96]
+    0.00 :   1ded8:       ldp     d10, d11, [sp, #112]
+    0.00 :   1dedc:       ldp     x29, x30, [sp], #352
+    0.00 :   1dee0:       ret
+    0.00 :   1dee4:       lsl     x2, x4, #2
+    0.00 :   1dee8:       stp     x4, x5, [sp, #128]
+    0.00 :   1deec:       cmp     x2, #0x0
+    0.00 :   1def0:       csel    x1, x2, x1, ne  // ne = any
+    0.00 :   1def4:       bl      6170 <realloc@plt>
+    0.00 :   1def8:       mov     x22, x0
+    0.00 :   1defc:       str     x0, [sp, #160]
+    0.00 :   1df00:       ldp     x4, x5, [sp, #128]
+    0.00 :   1df04:       b       1daa4 <__elmfire_spread_rate_MOD_burned_filter+0x11c>
+    0.00 :   1df08:       mov     x10, #0x0                       // #0
+    0.00 :   1df0c:       mov     x0, #0x0                        // #0
+    0.00 :   1df10:       b       1db68 <__elmfire_spread_rate_MOD_burned_filter+0x1e0>
+    0.00 :   1df14:       mov     x19, #0xffffffffffffffff        // #-1
+    0.00 :   1df18:       mov     x10, #0x0                       // #0
+    0.00 :   1df1c:       mov     x0, #0x0                        // #0
+    0.00 :   1df20:       b       1db68 <__elmfire_spread_rate_MOD_burned_filter+0x1e0>
+    0.00 :   1df24:       adrp    x0, 51000 <__elmfire_vars_MOD___def_init_elmfire_vars_Dll+0x3d00>
+    0.00 :   1df28:       mov     w1, #0x101                      // #257
+    0.00 :   1df2c:       stp     x19, xzr, [sp, #240]
+    0.00 :   1df30:       ldr     q1, [x0, #1376]
+    0.00 :   1df34:       mov     x0, x25
+    0.00 :   1df38:       strh    w1, [sp, #252]
+    0.00 :   1df3c:       stp     q0, q1, [sp, #256]
+    0.00 :   1df40:       bl      63e0 <malloc@plt>
+    0.00 :   1df44:       mov     x19, x0
+    0.00 :   1df48:       stp     x0, xzr, [sp, #224]
+    0.00 :   1df4c:       b       1de08 <__elmfire_spread_rate_MOD_burned_filter+0x480>
+    0.00 :   1df50:       mov     x0, #0x0                        // #0
+    0.00 :   1df54:       b       1dd58 <__elmfire_spread_rate_MOD_burned_filter+0x3d0>
+    0.00 :   1df58:       adrp    x0, 4d000 <_IO_stdin_used+0x30>
+    0.00 :   1df5c:       add     x0, x0, #0x420
+    0.00 :   1df60:       bl      6430 <_gfortran_os_error@plt>
+    0.00 :   1df64:       adrp    x2, 51000 <__elmfire_vars_MOD___def_init_elmfire_vars_Dll+0x3d00>
+    0.00 :   1df68:       adrp    x1, 4d000 <_IO_stdin_used+0x30>
+    0.00 :   1df6c:       adrp    x0, 51000 <__elmfire_vars_MOD___def_init_elmfire_vars_Dll+0x3d00>
+    0.00 :   1df70:       add     x2, x2, #0x4c8
+    0.00 :   1df74:       add     x1, x1, #0x480
+    0.00 :   1df78:       add     x0, x0, #0x518
+    0.00 :   1df7c:       bl      6360 <_gfortran_runtime_error_at@plt>
